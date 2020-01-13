@@ -15,9 +15,9 @@ I would kike to work on the taxonomy of relations between cultural published gam
 
 ### ... Do it myself 
 
-* Download the latest [source code](https://github.com/pmartinolli/TTTTRPG/blob/master/files/ttgbg.gv). It should be easy to understand.
+* Download the latest [source code](https://github.com/pmartinolli/TTGBG/blob/master/files/ttgbg.gv). It should be easy to understand.
 * Install and set up [Graphviz and Textpad++](http://zotrpg.blogspot.com/2016/05/creating-graph-for-od.html).
-* Compile the code. The details are in the header of the [source code](https://github.com/pmartinolli/TTTTRPG/blob/master/files/ttgbg.gv) ("Parameters"). It will produce a ps file.
+* Compile the code. The details are in the header of the [source code](https://github.com/pmartinolli/TTGBG/blob/master/files/ttgbg.gv) ("Parameters"). It will produce a ps file.
 * With Adobe Distiller, turn the ps file into a PDF file. If you successfully used a free and open-source software to do that job, please let me know. 
 
 ### ... Contribute
@@ -62,7 +62,7 @@ Special thanks to James Wallis for his inputs on methodology, for his suggested 
 
 The source code is an adaptation of the code created by [Todd Lehman](https://tex.stackexchange.com/users/8499/todd-lehman) for his [“TeX Family Tree”](https://tex.stackexchange.com/questions/42594/tex-family-tree-with-timeline). 
 
-The data sources of this work are numerous. You can have a look of the [references](https://github.com/pmartinolli/TTTTRPG/blob/master/files/ttgbg-sources.md) used to select, check and analyze the TTRPGs.
+The data sources of this work are numerous. You can have a look of the [references](https://github.com/pmartinolli/TTGBG/blob/master/files/ttgbg-sources.md) used to select, check and analyze the TTRPGs.
 
 
 
