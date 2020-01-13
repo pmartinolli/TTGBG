@@ -1,7 +1,7 @@
 # TTGBG
 **Timeline Tree of Games and Board Games, celebrating more than 8000 years of game design innovations**
 
-* Download the **[PDF poster](https://github.com/pmartinolli/TTGBG/blob/master/files/ttgbg.pdf)** (4 Mo)
+* Download the **[PDF poster](https://github.com/pmartinolli/TTGBG/blob/master/files/ttgbg.pdf)**
 
 [![TTTTRPG snapshot](https://github.com/pmartinolli/TTTTRPG/blob/master/files/ttgbg-snapshot.png)](https://github.com/pmartinolli/TTTTRPG/blob/master/files/ttgbg.pdf)
 
