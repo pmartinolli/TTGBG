@@ -7,7 +7,7 @@
 
 ## Long term goal
 
-This timeline is a part of the « [On the Shoulders of Cloud Giants](http://zotrpg.blogspot.com/search/label/on%20the%20shoulders%20of%20dwarves) » [(en français)](https://jdr.hypotheses.org/category/sur-epaules-geants-nuages) set of projects. 
+This timeline is a part of the « [On the Shoulders of Cloud Giants](http://zotrpg.blogspot.com/search/label/on%20the%20shoulders%20of%20dwarves) » [(en français)](https://jdr.hypotheses.org/category/sur-epaules-geants-nuages) set of projects. See also a [Timeline Tree of Tabletop Role-Playing Games](https://github.com/pmartinolli/TTTTRPG)
 
 I would like to work on the taxonomy of relations between games. My ambition is to design a whole phylomemetic system to track the evolution of cultural ideas. 
 
