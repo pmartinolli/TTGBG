@@ -1,0 +1,1263 @@
+##### Version 20200113
+
+###################################################################
+###########                                              ##########
+###########           Part 1 : Preamble                  ##########
+###########                                              ##########
+###########           Header, parameters & label         ##########
+###########                                              ##########
+###################################################################
+
+
+###################################################################
+###########           Header : Metadata                  ##########
+###################################################################
+
+##### Title: TTGBG - Timeline Tree of Games, Boardgames and Game Designs
+##### Subtitle: Celebrating centuries of game innovations from -6000 to today
+##### Author: Pascal Martinolli 
+##### Licence: CC-BY-NC-SA
+##### Project date: 2016-2020
+##### Join me at: pascal.umontreal at gmail.com 
+##### Code source and files at : 
+##### Follow this project at: 
+##### Code explained here in english: 
+#####                     in french:  
+##### Based on the source code developped by Todd Lehman for his TeX Family Tree: https://tex.stackexchange.com/questions/42594/tex-family-tree-with-timeline
+
+##### Contributors : James Wallis.
+##### References : cf. sources-gametimeline.txt file
+
+
+###################################################################
+###########                Parameters                    ##########
+###################################################################
+
+##### Language: dot
+##### Compile with: dot "$(FULL_CURRENT_PATH)"  -Tps -v -o "$(CURRENT_DIRECTORY)\$(NAME_PART).ps"
+##### Then generate PDF with Acrobat Distiller: double-click on the PS file with Parameters = Oversized Pages : 
+
+graph TTGBG_timeline {     
+
+#graph [rankdir=LR]        # activate if you prefer to have a direction of the graph left to right (NB: PS file with Parameters = Oversized Pages : 15 m x 7 m)
+
+node [shape=none]          # no frame for each informations
+edge [color=lightgrey]     # standard color of the links between informations
+
+node [fontsize=20; fontname="Helvetica"]      # standard size of the information fonts
+edge [fontsize=20; fontname="Helvetica"]         # standard size of the links fonts
+
+###################################################################
+###########       Label displayed on the graph           ##########
+###################################################################
+
+{
+node [];
+edge [color=lightgrey; fontcolor=lightgrey; fontsize=50]
+{ rank = same; future; title [label=" TTGBG - Timeline Tree of Games, Boardgames and Game Designs\nCelebrating centuries of game innovations from -6000 to today\nPascal Martinolli (CC-BY-NC-SA) 2016-2020\n\ngithub.com/pmartinolli/" fontsize=100 fontname="Helvetica" shape=box]}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###################################################################
+###########                                              ##########
+###########           Part 2 : Timeline                  ##########
+###########                                              ##########
+###########    it is the basic rule of all the graph     ##########
+###########                                              ##########
+###################################################################
+
+
+
+{
+    node [];
+	past -- "-540 Ma"  [style=invis];
+	"-540 Ma" --  "-400 Ma" [style=invis];
+	"-400 Ma" -- "-250 Ma" [style=invis];
+	"-250 Ma" -- "-80 Ma" [style=invis];
+	"-80 Ma" --  "-6 Ma" [style=invis];
+	"-6 Ma" -- "-2 Ma" [style=invis];
+	"-2 Ma" -- "-50.000"  [style=invis];
+    "-50.000" -- "-7000" [style=invis];
+    "-7000" -- "-5000" [style=invis];
+    "-5000" -- "-4000" [style=invis];	
+    "-4000" -- "-3000" [style=invis];
+    "-3000" -- "-2000" [style=invis];    
+    "-2000" -- "-1000" [style=invis];
+    "-1000" -- "-900" [style=invis];
+    "-900" -- "-800" [style=invis];
+    "-800" -- "-700" [style=invis];    
+    "-700" -- "-600" [style=invis];
+    "-600" -- "-500" [style=invis];
+    "-500" -- "-400" [style=invis];
+    "-400" -- "-300" [style=invis];	
+    "-300" -- "-200" [style=invis];	
+    "-200" -- "-100" [style=invis];
+    "-100" -- 0 [style=invis];
+    0 -- 100 [style=invis];
+    100 -- 200 [style=invis];
+    200 -- 300 [style=invis];
+    300 -- 400 [style=invis];
+    400 -- 500 [style=invis];
+    500 -- 600 [style=invis];
+    600 -- 700 [style=invis];
+    700 -- 800 [style=invis];
+    800 -- 900 [style=invis];
+    900 -- 1000 [style=invis];
+    1000 -- 1100 [style=invis];
+    1100 -- 1200 [style=invis];
+    1200 -- 1300 [style=invis]; 
+    1300 -- 1400 [style=invis];
+    1400 -- 1500 [style=invis];
+    1500 -- 1600 [style=invis];
+    1600 -- 1700 [style=invis];
+    1700 -- 1800 [style=invis];
+    1800 -- 1810 [style=invis];
+    1810 -- 1820 [style=invis];
+    1820 -- 1830 [style=invis];
+    1830 -- 1840 [style=invis];    
+    1840 -- 1850 [style=invis];
+    1850 -- 1860 [style=invis];
+    1860 -- 1870 [style=invis];
+    1870 -- 1880 [style=invis];
+    1880 -- 1890 [style=invis];
+    1890 -- 1900 [style=invis];
+    1900 -- 1910 [style=invis];
+    1910 -- 1920 [style=invis];
+    1920 -- 1930 [style=invis];
+    1930 -- 1940 [style=invis];
+    1940 -- 1950 [style=invis];
+    1950 -- 1951 [style=invis];    
+    1951 -- 1952 [style=invis];
+    1952 -- 1953 [style=invis];
+    1953 -- 1954 [style=invis];
+    1954 -- 1955 [style=invis];
+    1955 -- 1956 [style=invis];
+    1956 -- 1957 [style=invis];
+    1957 -- 1958 [style=invis];
+    1958 -- 1959 [style=invis];
+    1959 -- 1960 [style=invis];
+    1960 -- 1961 [style=invis];
+    1961 -- 1962 [style=invis];
+    1962 -- 1963 [style=invis];
+    1963 -- 1964 [style=invis];
+    1964 -- 1965 [style=invis];
+    1965 -- 1966 [style=invis];	
+    1966 -- 1967 [style=invis];
+    1967 -- 1968 [style=invis];
+    1968 -- 1969 [style=invis];
+    1969 -- 1970 [style=invis];
+    1970 -- 1971 [style=invis];
+    1971 -- 1972 [style=invis];
+    1972 -- 1973 [style=invis];
+    1973 -- 1974 [style=invis];
+    1974 -- 1975 [style=invis];
+    1975 -- 1976 [style=invis];
+    1976 -- 1977 [style=invis];
+    1977 -- 1978 [style=invis];
+    1978 -- 1979 [style=invis];
+    1979 -- 1980 [style=invis];
+    1980 -- 1981 [style=invis];
+    1981 -- 1982 [style=invis];
+    1982 -- 1983 [style=invis];
+    1983 -- 1984 [style=invis];
+    1984 -- 1985 [style=invis];
+    1985 -- 1986 [style=invis];
+    1986 -- 1987 [style=invis];
+    1987 -- 1988 [style=invis];
+    1988 -- 1989 [style=invis];
+    1989 -- 1990 [style=invis];
+    1990 -- 1991 [style=invis];
+    1991 -- 1992 [style=invis];
+    1992 -- 1993 [style=invis];
+    1993 -- 1994 [style=invis];
+    1994 -- 1995 [style=invis];
+    1995 -- 1996 [style=invis];
+    1996 -- 1997 [style=invis];
+    1997 -- 1998 [style=invis];
+    1998 -- 1999 [style=invis];
+    1999 -- 2000 [style=invis];
+    2000 -- 2001 [style=invis];
+    2001 -- 2002 [style=invis];
+    2002 -- 2003 [style=invis];
+    2003 -- 2004 [style=invis];
+    2004 -- 2005 [style=invis];
+    2005 -- 2006 [style=invis];
+    2006 -- 2007 [style=invis];
+    2007 -- 2008 [style=invis];
+    2008 -- 2009 [style=invis];
+    2009 -- 2010 [style=invis];
+    2010 -- 2011 [style=invis];
+    2011 -- 2012 [style=invis];
+    2012 -- 2013 [style=invis];
+    2013 -- 2014 [style=invis];
+    2014 -- 2015 [style=invis];
+    2015 -- 2016 [style=invis];
+    2016 -- 2017 [style=invis];
+    2017 -- 2018 [style=invis];
+    2018 -- 2019 [style=invis];
+    2019 -- 2020 [style=invis];
+    2020 -- future [style=invis];
+
+} # end timeline
+
+
+
+
+
+
+
+
+
+########### Gameplay
+{
+node [fontcolor=orange, color=orange];
+  edge [fontcolor=orange, color=orange];
+
+{ play [label="play"]} 
+{ game [label="game"]} play -- game;
+
+{ outdoorgame [label="outdoor game"]} embodiedgame -- outdoorgame;
+{ sport [label="sport"]} outdoorgame -- sport;
+
+{ racing [label="racing"]}
+{ racingfighting [label="racing and fighting"]} racing -- racingfighting; #s21
+{ chasingevading [label="chasing, evading and capturing"]} racingfighting -- chasingevading ;
+{ racingcollecting [label="racing and collecting"]}
+
+{ territorialacquisition [label="territorial acquisition"]} {chasingevading;collecting} -- territorialacquisition;
+
+{ wargaming [label="wargaming simulation"]} chasingevading -- wargaming;
+{ miniaturewargaming [label="miniature wargaming"]} wargaming -- miniaturewargaming;
+{ navalwargaming [label="naval wargaming"]} wargaming -- navalwargaming;
+{ megagame [label="megagame"]} {wargaming;larp} -- megagame ;
+{ politicalwargaming [label="political wargiming"]} wargaming -- politicalwargaming ;
+
+{ twoplayers [label="two players"]} 
+{ soloplay [label="solo play"]} twoplayers -- soloplay; 
+{ smallgroupplayers [label="small group of players"]} twoplayers -- smallgroupplayers;
+{ exceptionbasedgame [label="exception-based game"]} smallgroupplayers -- exceptionbasedgame; #each player has different power
+
+{ linearpairingdomino [label="linear pairing"]} domino -- linearpairingdomino;
+{ suitedcard [label="building suit of card"]} linearpairingdomino -- suitedcard;
+{ trumpcard [label="game of trump or ruff"]} suitedcard -- trumpcard;   
+{ tricktacking [label="trick-taking cardgames"]} trumpcard -- tricktacking;
+{ multitrick [label="multi-trick"]} tricktacking -- multitrick;
+{ pointtrick [label="point-trick"]} tricktacking -- pointtrick;
+{ plaintrick [label="plain-trick"]} tricktacking -- plaintrick;
+{ trickndraw [label="trick-and-draw"]} tricktacking -- trickndraw;
+{ trickavoidance [label="trick-avoidance"]} tricktacking -- trickavoidance;
+
+{ sheddingtypecard [label="shedding-type card game"]} card -- sheddingtypecard; #t102
+
+{ sowing [label="sowing and capturing"]} sowing -- collecting; #mancala
+{ collecting [label="collecting"]} 
+{ building [label="building"]} sowing -- building;
+{ unbuilding [label="unbuilding"]} building -- unbuilding;
+{ tileplacement [label="tile placement"]} building -- tileplacement;
+{ tileworkerplacement [label="tile & worker placement"]} tileplacement -- tileworkerplacement;
+{ tableaubuilding [label="tableau building"]}  {suitedcard;building} -- tableaubuilding ;
+
+{ collectiblecard [label="collectible card"]}  {suitedcard;soloplay} -- collectiblecard ;
+{ collectibledeckbuilding [label="deck building \nw/collectible card"]} {collectiblecard;building} -- collectibledeckbuilding;
+{ completedeckbuilding [label="deck building \nw/complete card set"]} collectibledeckbuilding -- completedeckbuilding;
+
+
+
+{ pretendplay [label="pretend play"]} embodiedgame -- pretendplay;
+{ sexualroleplay [label="sexual role play"]} pretendplay -- sexualroleplay;
+{ historicalreenactment [label="historical reenactment"]} pretendplay -- historicalreenactment;
+
+{ treasurehunt [label="treasure hunt"]} pretendplay -- treasurehunt;
+{ realmaze [label="maze"]} pretendplay -- realmaze;
+
+
+{ dressup [label="dress up"]} pretendplay -- dressup; 
+{ cosplay [label="cosplay"]} dressup -- cosplay; 
+{ larp [label="larp"]} cosplay -- larp; 
+
+{ ttrpg [label="ttrpg"]} wargaming -- ttrpg; 
+{ gamebook [label="gamebook"]} {soloplay;ttrpg} -- gamebook; 
+{ storygame [label="storygame"]} ttrpg -- storygame; 
+
+
+{ religiousmeaning [label="religious meaning"]} play -- religiousmeaning; 
+
+
+
+} #end of gameplay
+
+
+
+
+
+
+########### Board & pieces
+{
+node [fontcolor=red3, color=red3];
+  edge [color=red3];
+
+{ embodiedgame [label="embodied game"]}  play -- embodiedgame;
+
+#{ ballgame [label="ball game"]}  embodiedgame -- ballgame;
+#{ batnball [label="Bat-and-ball"]}  ballgame -- batnball;
+#{ racquetnball [label="Racquet-and-ball"]}  ballgame -- racquetnball;
+#{ handnball [label="Hand-and-ball-stricking"]}  ballgame -- handnball;
+#{ netsport [label="Non-racquet net sport"]}  ballgame -- netsport;
+#{ goalsport [label="Goal sport"]}  goalsport -- netsport;
+#{ targetsport [label="Target/precision sport"]}  ballgame -- targetsport;
+#{ cuesport [label="Cue sport"]}  targetsport -- cuesport;
+
+{ toyplay [label="toy play"]} norules -- toyplay;
+{ puppetplay [label="puppet play"]} toyplay -- puppetplay;
+
+{ noboard [label="no board"]} game -- noboard; #knuckebones    
+
+{ tabletopgame [label="tabletop game"]} noboard -- tabletopgame;
+
+{ board [label="board game"]} tabletopgame -- board;
+
+{ circularboard [label="circular board"]} board -- circularboard; #mancala
+{ patternboard [labe="symetrical patterned board"]} circularboard -- patternboard; 
+{ linearboard [label="linear board"]} board -- linearboard; 
+{ lineareducationalboard [label="linear board"]} linearboard -- lineareducationalboard;
+{ gridboard [label="grid board"]} circularboard -- gridboard; 
+{ symetricalboard [label="symetrical grid board"]} gridboard -- symetricalboard; 
+
+{ twocoloredboard [label="two-colored checkered board"]} symetricalboard -- twocoloredboard; 
+{ multicoloredboard [label="multicolored terrains board\nred vs blue color coding"]} twocoloredboard -- multicoloredboard; 
+{ map [label="mapped board"]} multicoloredboard -- map; 
+{ gridmap [label="600x600 grid map (w/terrains)"]} map -- gridmap; 
+{ hexboard [label="hex mapped board"]} gridmap -- hexboard; 
+
+{ mobilepiece [label="mobile piece"]} tabletopgame -- mobilepiece;
+{ onepieceoneindividual [label="1 piece = 1 individual"]} mobilepiece -- onepieceoneindividual;
+{ onepieceonegroup [label="1 piece = 1 group of soldiers"]} onepieceoneindividual -- onepieceonegroup -- miniaturewargaming;
+{ flippedpiece [label="flipped piece"]} mobilepiece -- flippedpice;  #reversi
+
+
+{ computergame [label="computer game"]} 
+{ videogame [label="[console] video game"]} computergame -- videogame;
+{ mobilegame [label="mobile game"]} videogame -- mobilegame;
+{ textadventure [label="text adventure game"]} computergame -- textadventure;
+{ graphicalinteractivefiction [label="graphical interactive fiction"]} textadventure -- graphicalinteractivefiction;
+
+
+} #end of board & pieces
+
+
+
+
+
+
+
+
+########### Uncertainty
+{
+ node [color=darkturquoise , fontcolor=darkturquoise];  
+  edge [color=darkturquoise , fontcolor=darkturquoise] ;
+
+{ uncertainty [label="uncertainty"]}  
+
+{ randomness [label="randomness"]} uncertainty -- randomness;
+
+{ throwingsticks [label="throwing sticks"]}  randomness -- throwingsticks;
+{ knucklebone [label="knucklebone"]}  randomness -- knucklebone;
+{ dice [label="dice"]} knucklebone -- dice;
+{ d4 [label="d4"]} {knucklebone;dice} -- d4;
+{ d6 [label="d6"]} dice -- d6;
+{ spinningdice [label="spinning dice"]} dice -- spinningdice;
+{ rollnkeep [label="roll n keep"]} dice -- rollnkeep;
+
+{ lottery [label="lottery"]} gambling -- lottery;
+{ gambling [label="gambling"]}  {randomness;imperfectinformation} -- gambling ;
+{ bidding [label="bidding"]} gambling -- bidding;
+{ stockexchange [label="stock exchange simulation"]} bidding -- stockexchange;
+
+{ imperfectinformation [label="imperfect information game"]}  uncertainty -- imperfectinformation ;
+
+{ negociationgame [label="negociation game"]} imperfectinformation -- negociationgame;
+negociationgame -- politicalwargaming;
+
+{ twomapsgame [label="2 maps of the same game"]} 
+
+{ domino [label="domino"]} mobilepiece -- domino;
+{ card [label="card"]} domino -- card;
+
+
+{ secretidentity [label="secret identity"]} pretendplay -- secretidentity; 
+{ roletakingparlourgames [label="role taking parlour game"]} secretidentity -- roletakingparlourgames; #t34
+{ murdermystery [label="murder mystery"]} roletakingparlourgames -- murdermystery;
+{ investigation [label="investigation"]} murdermystery -- investigation;
+{ assassingame [label="assassin games"]} roletakingparlourgames -- assassingame;
+
+{ semanticgame [label="semantic game"]} uncertainty -- semanticgame; 
+{ wordbuilding [label="word building"]} semanticgame -- wordbuilding; 
+{ deciphering [label="deciphering"]} semanticgame -- deciphering; 
+{ codingdecoding [label="coding-decoding"]} deciphering -- codingdecoding; 
+{ storyfirst [label="story first"]} semanticgame -- storyfirst -- ttrpg ; 
+
+
+} #end of gameplay
+
+
+
+
+
+
+
+
+
+
+########## Adjudication, Rules
+{
+node [color=chocolate4, shape=none, fillcolor=white, fontcolor=chocolate4];
+edge [color=chocolate4]
+
+
+
+{ norules [label="No rules"]} play -- norules;
+
+
+
+
+{ goal [label="Goal / Objective"]} norules -- goal;
+{ noendgame [label="No endgame conditions"]} goal -- noendgame;
+
+{ rules [label="Rules"]} goal -- rules;
+{ writtenrules [label="Written rules"]} rules -- writtenrules;
+
+{ resolutionrules [label="Resolution rules"]} rules -- resolutionrules;
+{ generativerules [label="Generative rules"]} rules -- generativerules;
+{ adjucationruling [label="Adjudication ruling"]} rules -- adjucationruling;
+
+{ complexrules [label="Complex rules"]} writtenrules -- complexrules;
+{ complexdebattedrules [label="Complex and debatted rules"]} complexrules -- complexdebattedrules;
+{ quantifiedresults [label="Quantified results of actions"]} complexrules -- quantifiedresults;
+ 
+{ referee [label="Referee"]} adjucationruling -- referee; # sports
+{ refereewassistants [label="Referee w/ assistants"]} referee -- refereewassistants; 
+{ refereedesigner [label="Referee is scenario designer"]} referee -- refereedesigner ; 
+{ refereesemifree [label="Referee freed from some rules"]} adjucationruling -- refereesemifree; 
+{ refereefree [label="Referee renders decisions completely\non tactical experience (not on rules)"]} adjucationruling -- refereefree; 
+
+
+
+{ gamemaster [label="Game Master"]} adjucationruling -- gamemaster; #ttrpg
+{ gmless [label="GM-less"]} gamemaster -- gmless;  #baron munch
+{ turninggm [label="Turning GM"]} gamemaster -- turninggm;  #arsmagica
+
+
+
+
+} #end of rules
+
+
+
+
+
+
+############################
+########### Games 
+{
+node [];
+  edge [];
+
+
+
+
+
+
+#####
+
+{ rank = same; "-540 Ma" ; amphibiansplay [label="Amphibians play ?"]} play -- amphibiansplay; #t82
+{ rank = same; "-400 Ma" ; reptilesplay [label="Reptiles play ?"]} norules -- reptilesplay; #t82
+{ rank = same; "-250 Ma" ; mammalsplay [label="Mammals play ?"]} rules -- mammalsplay; #t82
+{ rank = same; "-80 Ma" ; primatesplaygame [label="Primates play ?"]} game -- primatesplaygame; #t82
+{ rank = same; "-6 Ma" ; homininisplaygame [label="Hominini play ?"]} embodiedgame -- homininisplaygame; #speech + specialization ready #t82
+{ rank = same; "-2 Ma" ; homosplaytoy [label="Homo play ?"]} toyplay -- homosplaytoy; #stone tools #t82
+{ rank = same; "-50.000" ; homosapienssplay [label="Homo sapiens play"]} pretendplay -- homosapienssplay; # abstract thinking, planning depth, symbolic behavior,  cumulative cultural adaptation, social norms, language, and extensive help and cooperation beyond close kin #t83
+
+
+##### Old & unknown
+
+{ rank = same; "-5000" ; basurhoyuk [label="Basur Hoyuk's game \n [Turkey/c-5000] \n Oldest pieces of game found"]} #s58
+noboard -- basurhoyuk
+
+{ rank = same; "-2000" ; mohenjodaro [label="Mohenjo-Daro \n (toys and games artifacts) \n [Pakistan/c.-1800]" ]}  #78 
+noboard -- mohenjodaro;
+
+{ rank = same; "-2000"; checkerboardeg [label="(checkerboard)[Egypt/-c1400]"]}  
+twocoloredboard -- checkerboardeg;
+
+{ rank = same; "0"; gewu [label="GeWu or Saizhang \n [China/c-?] \n No dice \n Unknown game"]}  liubo -- gewu ;
+
+
+
+##### Dices 
+
+{ rank = same; "-4000"; knucklebones [label="Knucklebones (astragali) d4 \n [Early antiquity]"]}   # aka: hucklebones, dibs, dibstones, jackstones, chuckstones, osselets (FR)
+knucklebone -- knucklebones;
+gambling -- knucklebones; #s5
+
+{ rank = same; "-2000"; egyptcubedice [label="Egyptian cube dice \n [c.-2000]"]} 
+d6 -- egyptcubedice;
+{ rank = same; "-600"; chinesecubedice [label="Chinese cube dice \n [China/c.-600]"]} 
+d6 -- chinesecubedice;
+{ rank = same; "-200"; astragali45 [label=" (4-5 Astragali [Greece/c.-200]"  ]} #4: αστραγαλισμοσ  5: πευτελιξοι
+knucklebone -- astragali45 ; #s32
+{ rank = same; "-500"; pleistobolinda [label="Pleistobolínda \n [Greece/c.-500?]"]}   #3d6
+d6 -- pleistobolinda;
+
+{ rank = same; "1000"; teetotum [label="Teetotum \n [Europe/c.1000]"]}  
+spinningdice -- teetotum;
+{ rank = same; "1300"; dreidel [label="Dreidel \n [Europe/c.1300]"  ]} teetotum -- dreidel ;  #t33
+
+{ rank = same; 500 ; chinesedicegame [label="Chinese dice games"]}  #date?
+dice -- chinesedicegame;
+
+{ rank = same; 1800 ; liarsdice [label="Liar's Dice [UK,c.1800]"]}  #s100 
+
+
+
+
+##### chasing evading
+
+{ rank = same; "-3000"; rgur [label ="Royal Game of Ur  \n [Persia/c.-3000]" ]} #t46 # s31 
+patternboard -- rgur;
+d4 -- rgur;
+chasingevading -- rgur; #1st
+
+
+{ rank = same; 1989; heroquest [label = "HeroQuest"] } chasingevading -- heroquest;
+{ rank = same; 1989; spacehulk [label = "Space Hulk"] } chasingevading -- spacehulk;
+
+
+
+
+##### racing 
+
+{ rank = same; "-3000"; senet [label ="Senet \n [Egypt/-c3100]" ]}  #s17 
+gridboard -- senet;
+d6 -- senet;
+racing -- senet;
+{ rank = same; "-1000"; nefertari [label ="Nefertari playing Senet vs Fate \n [Egypt/c.-1260]"  ]}  senet -- nefertari ; #s17
+soloplay -- nefertari;
+religiousmeaning -- nefertari;
+
+{ rank = same; "-3000"; mehen [label ="Mehen \n [Egypt/-3000]" ]}   
+racing -- mehen;
+
+{ rank = same; "-3000"; shahresukhteh [label="Shahr-e Sukhteh's game \n [Persia /c.-3000]"]}  #s18 #t77
+racing -- shahresukhteh;
+
+{ rank = same; "-300"; boluosaixi [label="Boluo Saixi \n [China,c-?] \n Backgammon type"]} boluosaixi -- xiangqi ;   # aka: Prasena, bosaixi?
+racing -- boluosaixi;
+
+#####racing:backgammon
+{ rank = same; 0; xxiiscripta [label="Ludus duodecim scriptorum \n or XII Scripta \n [Rome/c.0]"]}  senet -- xxiiscripta ;
+racing -- xxiiscripta;
+{ rank = same; 300; nard [label="Nard or nardshir \n [Persia/c.300?]"]}  nard -- backgammon ;
+racing -- nard;
+{ rank = same; 400; tabula [label="Zeno's Tabula \n [Byzanthium/c.470]"]} xxiiscripta -- tabula ; #t19
+{ rank = same; 600; backgammon [label="Backgammon \n [Persia/c.600]"]} { shahresukhteh ; tabula } -- backgammon ;
+racing -- backgammon ;
+{ rank = same; 300; shuanglu [label="Shuanglu \n [China/c.1100]"]}
+racing -- shuanglu;
+{ rank = same; 600; bansugoroku [label="Ban-sugoroku \n [Japan/c.600]"]} shuanglu -- bansugoroku ;
+{ rank = same; 1400; esugoroku [label="E-sugoroku \n [Japan/c.1300]"]} bansugoroku -- esugoroku ;
+{ rank = same; 1200; jeuxdetables [label="Jeux de tables \n [France/c.1200]"]} backgammon -- jeuxdetables ;
+{ rank = same; 1700; backgammonuk [label="Back-Gammon \n [UK/c.1700]"]}  jeuxdetables -- backgammonuk ;
+{ rank = same; 1920; backgammonus  [label="Modern backgammon \n [US/c.1920]"]}  backgammonuk -- backgammonus ;
+
+
+{ rank = same; "-200" ; patolli [label="Patolli \n [Teotihuacan/c.-200?]" ]}   
+racing -- patolli;
+
+
+{ rank = same; 0; chupu [label="Chupu \n [China/c?]"]}    liubo -- chupu [style=dotted] ;
+racing -- chupu;
+{ rank = same; 300; chaupar [label="Chaupar \n [India/c.300]"]}   chupu -- chaupar ;
+{ rank = same; 1700; pachisi [label="Pachisi \n [India/c.1700]" ]}  chaupar -- pachisi ;
+{ rank = same; 100; nyout [label="Nyout\n[kr,c100]"]}  chupu -- nyout [style=dotted] ; # aka: Yut Nori, Yut, Yunnori, yoot
+{ rank = same; 1890; ludo [label="Ludo \n [UK/1896]"]}  pachisi --ludo ;
+{ rank = same; 1930; sorry [label="Sorry! \n [1934]"]}  ludo -- sorry ;
+{ rank = same; 1960; trouble [label="Trouble \n [1965]"]}   sorry -- trouble ; 
+
+
+{ rank = same; 1954 ; millesbornes [label="Milles Bornes \n [Dujardin,1954]"]}
+racing -- millesbornes ;
+
+{ rank = same; 1962 ; formula1 [label="Formula 1 \n [1962]"]}
+racing -- formula1 ;
+
+
+
+
+##### linear progression 
+
+{ rank = same; "-2000" ; phaistosdisc [label="Phaistos Disc ? [-2000,Greece]"]} racing -- phaistosdisc ; #t92
+
+{ rank = same; 900; jaingyanchauper [label="Gyan chauper \n [India/c.900]"]} chaupar -- jaingyanchauper ; # aka: jain gyan chaupar, gyan chauper  #t20
+{ rank = same; 1890; snakesnladders [label="Snakes & Ladders \n [UK/1892]"]}  jaingyanchauper -- snakesnladders ; 
+{ rank = same; 1940; chutesnladders [label="Chutes & Ladders \n [US/1943]"]} snakesnladders -- chutesnladders ;
+
+{ rank = same; 1400 ; royalgamegoose [label="Royal Game of the Goose [1480]"]} racing -- royalgamegoose ; #t91
+{ rank = same; 1500 ; gamegoose [label="Game of the Goose [1570s]"]} royalgamegoose -- gamegoose ; #t91
+
+###### linear educational progression 
+{ rank = same; 1700; journeyeurope [label="A Journey Through Europe\n [UK/1759] "]}  {lineareducationalboard;racing} -- journeyeurope; 
+{ rank = same; 1820; ttttus [label="Traveller's Tour Through the US \n [US/1822] "]}  journeyeurope -- ttttus; #t93
+{ rank = same; 1820; everymanstation [label="Every Man to His Station \n [UK/1825]"]}  journeyeurope -- everymanstation ;
+{ rank = same; 1840; tmoh [label="The Mansion of Happiness \n [US/1843]"]}  ttttus -- tmoh ; #t94
+{ rank = same; 1840; tgopnp [label="The game of Pope and Pagan \n [US/1844]"]} tmoh -- tgopnp; #s59
+{ rank = same; 1860; chgameoflife [label="The Checkered Game of Life \n [US/1860] \n Secular values rewarded (education, marriage, money)"]}   tmoh -- chgameoflife ;  
+{ rank = same; 1880; tgotdmb [label="The Game of the District Messenger Boy \n [US/1886] \n Accumulation of Wealth lead to higher social status"]}  chgameoflife -- tgotdmb ;
+{ rank = same; 1880; tgottb [label="Game of the Telegraph Boy, or Merit Rewarded \n [US/1888]"]}  tgotdmb -- tgottb ;
+{ rank = same; 1940; candyland [label="Candy Land \n [US/1949]"]}  tgottb -- candyland ;
+{ rank = same; 1960; gameoflife [label="The Game of Life [1960]"]}  chgameoflife -- gameoflife ; 
+
+
+
+
+
+#####racingfighting
+
+{ rank = same; 300; bul [label="Bul \n [Maya/c.300?]"]} racingfighting -- bul;  #  aka: Buul, Boolik or Puluc   
+{ rank = same; 1600; tab [label="Tab \n [Arabia/c.1600]"]} racingfighting -- tab;  #  aka : tâba, tâb wa-dukk, Deleb , Sîg , sik, sir, siki, sîg wa-duqqân /  #t22
+{ rank = same; 1600; kioz [label="Kioz \n [Palestine/c.1600]"]}   tab -- kioz;
+{ rank = same; 1800; daldos [label="Daldøs \n [Danemark/c.1800]"]} kioz -- daldos [style=dotted] ; # aka: Jæren, Daldosa
+{ rank = same; 1800; sahkku [label="Sahkku \n [Norway-Russia/c.1800]"]} daldos -- sahkku ;  # aka: Bircu, Percc', The Devil's Game  #t23
+{ rank = same; 1910; suffragetto [label="Suffragetto \n [UK/1908]" ]} racingfighting -- suffragetto; #s56
+{ rank = same; 1910; pankasquitch [label="Pank-a-Squith \n [UK/1909]" ]} suffragetto -- pankasquitch [style=dotted] ; #s57
+
+
+
+{ rank = same; "-600"; liubo [label="Liubo \n [China/c-680] \n Race or battle boardgame" ]} 
+racing -- liubo;
+symetricalboard -- liubo;
+dice -- liubo;
+chasingevading -- liubo;
+
+
+
+
+##### Chess 
+
+{ rank = same; 600; xiangqi [label="Xiangqi \n [China/c.600]" ]} 
+chaturanga -- xiangqi [style=dotted, label="?"] ;
+liubo -- xiangqi ;
+gewu -- xiangqi [style=dotted, label="?"];
+
+{ rank = same; 1600; janggi [label="Janggi \n [Korea/c.1600]" ]} xiangqi -- janggi ;  #s11    # aka changgi, janghi, tjyang keui
+{ rank = same; 700; shogi [label="Shogi \n [Japan/c.700]" ]} xiangqi -- shogi;
+{ rank = same; 1500; shogidr [label="Shogi with 'drop rule' \n [Japan/c.1500]"]} shogi -- shogidr ;
+
+
+{ rank = same; 400; nayadyutair [label="Nayadyutair \n [India/c.450]"]} liubo -- nayadyutair [style=dotted, label="?"];
+{ rank = same; 600; chaturanga [label="चतुरङ्ग Chaturanga \n [India/c.600]"  ]}  nayadyutair -- chaturanga ;
+twocoloredboard -- chaturanga;
+onepieceoneindividual -- chaturanga;
+dice -- chaturanga;
+{ rank = same; 600; chatrang [label="شَطْرَنْج Chatrang \n [Persia/c.600]"  ]} chaturanga -- chatrang ; #t13
+{ rank = same; 700; sittuyin [label="Sittuyin \n [Burma/c.700]"]} chaturanga -- sittuyin ;  #t12
+{ rank = same; 700; shatranj [label="Shatranj \n [Arabia/c.700]"  ]} chatrang -- shatranj ;
+{ rank = same; 800; chessbyz [label="Byzantine (round) chess \n [Byzantium/c.900]" ]} shatranj -- chessbyz ; #s46
+{ rank = same; 800; ajadrez [label="Ajadrez \n [Spain/822]"]}  shatranj -- ajadrez ;
+{ rank = same; 1400; courrierchess [label="Courrier chess \n [Germany/c.1400]"  ]} ajadrez -- courrierchess [style=dotted] ;
+{ rank = same; 1500; scacchialudus [label="Scacchia ludus \n [Vida MJ/Italy/1527] \n Ludimus effigiem bell \n 'Our game figures the war'"]} chess -- scacchialudus ; #  poème sur le jeu d'échecs #s51 ce que nous jouons, c'est une représentation de la guerre
+{ rank = same; 1600; dskonigsspiel [label="Das Schackoder Königs-Spiel['King's game'] \n [AugustII/Germany/1616]"]}  courrierchess -- dskonigsspiel ;
+{ rank = same; 1600; konigsspiel [label="Neu-erfundenes grosses Koenig-Spiel['war chess'] \n [Weikhmann/Germany/1664]"]}  dskonigsspiel -- konigsspiel ;
+
+{ rank = same; 1900; doushouqi [label="Dou Shou Qi \n [China/c.1900]" ]}  # aka 鬥獸棋 'Game of Fighting Animals' Jungle / Doushouqi / The Jungle Game, Jungle Chess, or Animals Chess, Oriental Chess , Children's Chess
+{ rank = same; 1920 ; luzhanqi [label="Lu Zhan Qi \n [China/1927] \n non-perfect abstract strategy game of partial information" ]} doushouqi -- luzhanqi ; #  aka 陆战棋 'Land Battle Chess'
+{ rank = same; 1920; luzhanjunqi [label="Lu Zhan Jun Qi \n [China,]" ]}  luzhanqi -- luzhanjunqi  #date? # aka 陆战軍棋 'Army Chess'
+{ rank = same; 1990; hailukongzhanqi [label="Hai Lu Kong Zhan Qi  \n [China/1990]" ]} luzhanjunqi -- hailukongzhanqi ; #date? google patent #p48 #海陆空战棋 'Sea-Land-Air Battle Chess' 
+{ rank = same; 1910; lattaque [label="L'attaque \n [France/1910]"]}  doushouqi -- lattaque ;
+{ rank = same; 1940; stratego [label="Stratego \n [Netherlands/1947]"]}  lattaque --  stratego ;
+{ rank = same; 1970; salpakan [label="Salpakan, Game of the Generals \n [Philippino/1970]" ]} stratego -- salpakan [style=dotted];  #t47
+
+
+
+
+
+
+
+
+{ rank = same; "-2000"; hnj58h [label ="Hounds and Jackals\nor 58 Holes \n [Egypt/c-2000]"  ]} 
+building -- hnj58h;
+gambling -- hnj58h;
+
+
+##### Mancala
+
+{ rank = same; "-4000"; agmancala [label ="Ain Ghazal Mancala \n [Jordan/c-5870?]" ]} #s16
+circularboard -- agmancala;
+sowing -- agmancala;
+{ rank = same; "-700"; mancala [label ="Mancala \n [Africa/c-700]" ]} agmancala -- mancala ;
+{ rank = same; "1000"; arabmancala [label ="Al-manqala (Halusa) \n [Central asia and arabia]" ]} mancala -- arabmancala ;
+
+{ rank = same; "1500"; turkmangala [label ="Mangala \n [Turkey/1500]" ]}  arabmancala -- turkmangala ;
+
+{ rank = same; "1910"; dasbohnenspiel [label ="Das Bohnenspiel \n [Germany/1917]" ]} arabmancala -- dasbohnenspiel ; # wp
+
+
+
+
+
+##### Checkers
+
+{ rank = same; "-400"; petteia [label="Petteia [Greece/-c400]"]} checkerboardeg -- petteia [style=dotted] ; # aka: pessoi psephoi poleis, pente grammai
+{ rank = same; "-100"; latrunculorum [label="Ludus Latrunculorum [Rome/-100]" ]} petteia -- latrunculorum ; # aka: latrunculi latrones
+{ rank = same; 900; quirkat [label="Quirkat [Arabia/900]"]} latrunculorum -- quirkat ; # aka: Al-qirq
+{ rank = same; 1000; alquerque [label="Alquerque [Spain/1000]"]} quirkat -- alquerque ; 
+{ rank = same; 1100; draughts [label="Draughts or checkers \n [c.1100]"]}  alquerque -- draughts ; 
+twocoloredboard -- draughts;
+chasingevading -- draughts;
+{ rank = same; 1300; fierges [label="Fierges \n [France/1300]"]} draughts -- fierges ; 
+{ rank = same; 1400; dames [label="Dames \n [France/1400]"]} fierges -- dames ;
+
+
+{ rank = same; 1000; rithmomachia [label="Rithmomachia \n [1030]"]} ;
+
+{ rank = same; 1880; reversi [label="Reversi \n [1885]"]} ; flippedpiece -- reversi;
+{ rank = same; 1971; othello [label="Othello \n [1971]"]} ; reversi -- othello;
+
+
+
+
+
+
+###### racing+collecting
+
+{ rank = same; 1979; qqarpentsdepieges [label="Quelques arpents de pieges \n [Haney & Abbott,CA]"]} racingcollecting -- qqarpentsdepieges;
+{ rank = same; 1982; trivialpursuit [label="Trivial Pursuit \n [Haney & Abbott]"]}  qqarpentsdepieges -- trivialpursuit ;
+
+{ rank = same; 1983; talisman [label="Talisman [Robert Harris/UK]"] } 
+racingfighting -- talisman;
+racingcollecting -- talisman;
+
+{ rank = same; 1930 ; buccaneer [label="Buccaneer \n [Bull,1938]"]} 
+racingfighting -- buccaneer;
+racingcollecting -- buccaneer;
+
+
+{ rank = same; 1963 ; mousetrap [label="Mouse Trap \n [1963]"]}  racingcollecting -- mousetrap;
+
+
+
+
+############  tile games
+
+{ rank = same; 700 ; dominoes [label="Dominoes \n [China/c.700]"]}  #t24
+linearpairingdomino -- dominoes;
+gambling -- dominoes;
+
+{ rank = same; 1100 ; tiengow [label="Tien Gow standardized \n [China/c.1100]"]}  dominoes -- tiengow ;  #aka : 骨牌 =gwat pai =Bone tiles
+{ rank = same; 1600 ; paigow [label="Pai Gow \n [China/c.1600]"]} tiengow -- paigow ; # date?
+{ rank = same; 1800 ; baccarat [label="Baccarat \n []"]} paigow -- baccarat ; # date?
+{ rank = same; 1700 ; mahjong [label="Mahjong\n[China,c.1700]"]} dominoes -- mahjong ; #t25 #麻将
+
+
+
+
+
+
+
+
+
+
+
+############  card games
+
+{ rank = same; 1100 ; moneysuitedcards [label="Money-suited cards [China/c.1100?]"]} domino -- moneysuitedcards ;
+{ rank = same; 1400 ; ganjifa [label="Ganjifa [Persia/c.1400]"]} moneysuitedcards -- ganjifa ; # aka: Ganjapa Gânjaphâ  #t26
+
+{ rank = same; 1600 ; asnas [label="As-Nas [Persia/c.1600]"]} ganjifa -- asnas ; #t27
+
+{ rank = same; 1300 ; kanjifah [label="Kanjifah Mamluk cards [Egypt/c.1300]"]} moneysuitedcards -- kanjifah ; #t28
+
+{ rank = same; 1400; tarot [label="Tarot [Italy-Spain/c.1370"]}  kanjifah -- tarot ;  #t41
+
+{ rank = same; 1600 ; madiao [label=" Madiao [China/c.1600]"]} moneysuitedcards -- madiao ; #t29  #aka : Paper Tiger 马吊
+madiao -- tricktackinggames ;
+
+{ rank = same; 1100; khanhoo [label=" Khanhoo [China/c.1100]"]} { tiengow ; mahjong } -- khanhoo ;  #t30 #t68 #aka 看虎
+
+{ rank = same; 1700; poker [label="Poker" ]}
+gambling -- poker;
+
+
+######Games of trump & trick-tacking
+
+{ rank = same; 1500; ruffnhonours [label="Ruff & Honours [c.1500]"]} trumpcard -- ruffnhonours;
+
+{ rank = same; 1400; karnoffel [label="Karnöffel,1462, DE"]} tricktacking -- karnoffel; #t86
+{ rank = same; 1700; whist [label="Whist 1728, UK"]} tricktacking -- whist; #t87
+ruffnhonours -- whist; 
+{ rank = same; 1800; duplicatewhist [label="Duplicate whist 1840s, UK"]}
+
+{ rank = same; 1400; trionfi [label="Trionfi 1440, IT"]} pointtrick -- trionfi; 
+# trionfi (1440, IT) -- Tarot
+
+{ rank = same; 1500; piquet [label="Piquet 1535, FR"]} trickndraw -- piquet;
+{ rank = same; 1600; bezique [label="Bezique 1600s, ES"]} piquet -- bezique;
+{ rank = same; 1800; binokel [label="Binokel 1884, DE"]} bezique -- binokel;
+{ rank = same; 1900; pinochle [label="Pinochle 1900, US"]} binokel -- pinochle;
+
+##### Bridges
+
+{ rank = same; 1600; reversin [label="Reversin 1601, FR"]} trickavoidance -- reversin;
+{ rank = same; 1700; polignac [label="Polignac 1700s, FR"]} reversin -- polignac;
+{ rank = same; 1800; hearts [label="Hearts/Black Lady late 1700? 1800s????, UK? ES?"]} polignac -- hearts; #to verify
+
+{ rank = same; 1800; biritch [label="Reversin 1886, UK"]} whist -- biritch;
+{ rank = same; 1900; auctionbridge [label="Auction bridge 1904, UK"]} biritch -- auctionbridge;
+{ rank = same; 1920; contractbridge [label="Contract bridge 1920s"]} auctionbridge -- contractbridge;
+{ rank = same; 1940; duplicatebridge [label="Duplicate bridge 1940s"]} contractbridge -- duplicatebridge;
+duplicatewhist -- duplicatebridge ;
+
+
+
+##### Rummy games
+
+{ rank = same; 1850; conquian [label="Conquian \n [Mexico/c.1850] \n 1st game of rummy"]} khanhoo -- conquian ;  #t66    
+{ rank = same; 1900; ginrummy [label="Gin Rummy \n [US/c.1900]"]} conquian -- ginrummy ;  #t67 
+{ rank = same; 1850; rummy500 [label="500 Rum \n [US/c.1920]"]}  ginrummy -- rummy500 ;
+
+
+
+##### Shedding-type_games
+
+{ rank = same; 1930; eights [label="Eights \n [1930s]"]} #t104
+{ rank = same; 1940; crazyeights [label="Crazy Eights \n [1940s]"]} #t104
+{ rank = same; 1992; uno [label="Uno \n [1992]"]} #t103
+
+
+
+############ gambling / lottery / prediction games 
+
+#{ rank = same; ????; fightinganimal [label="Fighting animal betting"]}  gambling -- fightinganimal;
+#{ rank = same; ????; sportsbetting [label="Sports betting"]} gambling -- sportsbetting #t88
+{ rank = same; "-200" ; keno [label ="Keno \n [China/c.-200]" ]} lottery -- keno ;
+{ rank = same; 1100; shutthebox [label ="Shut the Box \n [c.1100]" ]}
+{ rank = same; 1500; bingo [label ="Bingo \n [c.1530]" ]} lottery -- bingo ;
+
+{ rank = same; 1600; casino [label ="Casino \n [1638,IT]"]} gambling -- casino; #t89
+
+
+{ rank = same; 1930; battleship [label ="Battleship \n [1931]" ]}  twomapsgame -- battleship ;
+
+{ rank = same; 1956; yatzee [label="Yatzee [1956]"]}  rollnkeep -- yatzee;
+
+{ rank = same; 1970; mastermind [label="Mastermind [1970]"]} deciphering -- mastermind;
+
+
+###### pure investigation
+
+{ rank = same; 1950; cluedo [label="Clue-Cluedo [Pratt,1949]"]} 
+murdermystery -- cluedo;
+jurybox -- cluedo ;
+
+{ rank = same; 1981; sherlockholmesconsultingdetective [label="Sherlock Holmes Consulting Detective [1981]"]} investigation -- sherlockholmesconsultingdetective;
+
+
+
+
+
+
+############ solitaire 
+
+{ rank = same; 1600; pegsolitaire [label="Peg Solitaire \n [France/1687]"]} # aka: solo noble 
+{ rank = same; 1700; patience [label="Patience (Solitaire) \n [France/1783]"]} pegsolitaire -- patience ;
+{ rank = same; 1800; hoppity [label="Hoppity \n [UK/1854]"]} patience -- hoppity [style=dotted] ;
+{ rank = same; 1800; halma [label="Halma \n [US/1883]"]} hoppity -- halma ;  
+{ rank = same; 1900; sternhalma [label="Stern-Halma \n ['Chinese checkers'] \n [Germany/1892]"]} halma -- sternhalma ; #aka: star halma, hop ching checkers, tiao-qi 
+
+
+
+############ word games
+
+{ rank = same; 1930; lexiko [label="Lexiko [US,Butts,1938]"]} wordbuilding -- lexiko ;
+{ rank = same; 1930; crisscrosswords [label="Criss Cross Words [US,Butts]"]} lexiko -- crisscrosswords ;
+{ rank = same; 1950; scrabble [label="Scrabble [US/1949]"]} crisscrosswords -- scrabble ;
+
+
+
+
+
+
+############# game of building 
+
+
+{ rank = same; 1980; empirebuilder [label="Empire Builder"] } 
+building -- empirebuilder;
+
+{ rank = same; 1984; jenga [label="Jenga"] } unbuilding -- jenga;
+
+{ rank = same; 2004; tickettoride [label="Ticket to Ride"] } building -- tickettoride;
+
+
+
+
+
+
+
+############# game of building & negociation
+
+{ rank = same; 1977; cosmicencounter [label="Cosmic Encounter [US,1977]"]} #Q634477
+building -- cosmicencounter;
+negociationgame -- cosmicencounter;
+exceptionbasedgame -- cosmicencounter;
+
+{ rank = same; 1979; dune [label="Dune [US,1979]"]}  #Q389078
+cosmicencounter -- dune;
+bidding -- dune;
+
+{ rank = same; 1995; catan [label="Settlers of Catan"] }  
+building -- catan;
+negociationgame -- catan;
+
+{ rank = same; 1980; civilization [label="Civilization [1980]"] }  
+building -- civilization;
+negociationgame -- civilization;
+
+
+
+
+
+############# tableau building, deck building
+
+{ rank = same; 1987; elixir [label="Elixir"]} 
+
+{ rank = same; 1993; magictg [label="Magic: the Gathering \n [Richard Garfield/US]"]} 
+collectibledeckbuilding -- magictg;
+
+{ rank = same; 1995; lr5ccg  [label = "Legend of the 5 Rings CCG \n [Seay, Zinser & Williams/US]"]} magictg -- lr5ccg ; 
+{ rank = same; 1996; pokemon [label="Pokémon Trading Card Game \n [Japan]"]} magictg -- pokemon;
+
+{ rank = same; 2008; dominion [label="Dominion \n [Donald X. Vaccarino/US] \n Complete card set"]}
+completedeckbuilding -- dominion;
+
+{ rank = same; 2000; carcassonne [label="Carcassonne \n [Klaus-Jürgen Wrede/Germany]"]} tileworkerplacement;
+{ rank = same; 2007; raceforthegalaxy [label="Race for the Galaxy \n [Thomas Lehmann/US]"]} tableaubuilding -- raceforthegalaxy ;
+
+{ rank = same; 1982; illuminati [label="Illuminati [Steve Jackson/US]"]} tableaubuilding -- illuminati;
+
+{ rank = same; 2010 ; sevenwonders [label = "7 Wonders [Antoine Bauza/Belgium] \n Drafting mechanic"]} 
+tableaubuilding -- sevenwonders;
+drafting -- sevenwonders;
+
+
+
+
+
+
+
+
+
+
+
+############  business games
+
+{ rank = same; 1904; pit [label="Pit \n [US/1904]"]} stockexchange -- pit;
+
+
+{ rank = same; 1920; mlnc [label="Model League of Nations clubs \n [US/c.1920]"]} 
+
+{ rank = same; 1950; businessgame [label="The AMA Top Management Decision Simulation [US/1956]"]}  
+{ rank = same; 1930; masondice [label="Mason & Co Stock Exchange Dice [US/1938]"]} stockexchange -- masondice; #p73
+
+{ rank = same; 1964; acquire [label="Acquire \n [Sid Sackson/US/1964]"]} stockexchange -- acquire;
+{ rank = same; 1995; settlersofcatan [label="Settlers of Catan \n [Germany/Klaus Teuber]"]}  
+
+
+
+
+############  games of territorial acquisition 
+
+{ rank = same; "-3000" ; weihai [label = "Wei-Hai \n [China/c.-3000] \n 'Encirclement': victory for outflanking the ennemy"]} ;  #s1  
+territorialacquisition -- weihai;
+{ rank = same; "-400"; weiqi [label ="Yi (Weiqi) \n[China,-400] \n 1st game of territorial acquisition" ]}  weihai -- weiqi ; 
+territorialacquisition -- weiqi;
+
+{ rank = same; 0; baduk [label ="Baduk \n[Korea,0])"]} weiqi -- baduk;
+{ rank = same; 1500; sunjangbaduk [label ="Sunjang Baduk \n[Korea,1500s]"]} baduk -- sunjangbaduk ;
+{ rank = same; 0; go [label ="Go \n [Japan,0]"]} weiqi -- go ;
+
+{ rank = same; 500; hnefatafl [label ="Hnefatafl \n[Scandinavia.300s]"]} territorialacquisition -- hnefatafl;
+
+{ rank = same; 1900; landlord [label="The Landlord's Game \n [Elizabeth Magie/US/1906]" ]} territorialacquisition -- landlord;
+{ rank = same; 1930; monopoly [label="Monopoly.1935" ]} landlord -- monopoly ;
+{ rank = same; 1973; antimonopoly [label="Anti-Monopoly.1973.Anspach R"]}  monopoly -- antimonopoly ; #t61
+
+{ rank = same; 1958; lcdm [label = "La conquête du monde" ]} territorialacquisition -- lcdm ;
+{ rank = same; 1959; risk [label = "Risk"]}  lcdm -- risk ;
+{ rank = same; 1959; diplomacy [label = "Diplomacy" ]} politicalwargaming -- diplomacy ;
+
+{ rank = same; 1961; summit [label = "Summit [1961]"]}  politicalwargaming -- summit ;
+
+{ rank = same; 2009; smallworld [label = "Small World [Philippe Keyaerts/Belgium]"] }  territorialacquisition -- smallworld;
+
+
+
+
+
+
+
+############ Wargames
+# voir https://en.wikipedia.org/wiki/History_of_Wargaming_Project
+
+########### early wargames    #s37
+
+{ rank = same; 1800 ; helwig [label = "Koenigspiel ['war chess'] \n [Helwig/Germany/1780]"]} 
+konigsspiel -- helwig ; 
+onepieceonegroup -- helwig;
+multicoloredboard -- helwig;
+
+{ rank = same; 1800 ; venturini [label = "Neue Kriegsspiel ['new war game'] \n [Venturini/Germany/1797] 600x600 grid map (w/terrains)"]} 
+helwig -- venturini ; 
+complexrules -- venturini;
+miniaturewargaming -- venturini;
+gridmap -- venturini;
+
+{ rank = same; 1810 ; kriegsspiel0 [label = "Anleitung zu einer mechanischen \n Vorrichtung um taktische Manoevers \n sinnlich darzustellen \n [GLB von Reisswitz (father)/Germany/1811]"]}  
+venturini -- kriegsspiel0 [style=dotted]; #s36
+wargaming -- kriegsspiel0; #1st time
+refereewassistants -- kriegsspiel0; #1st time 
+twomapsgame -- kriegsspiel0;
+complexdebattedrules -- kriegsspiel0;
+
+
+{ rank = same; 1830 ; kriegsspiel [label = "Anleitung zur Darstellung militaerischer \n Manoever mit dem Apparat des Kriegs-spiels \n [GHRJ von Reisswitz (son)/Germany/1824]"]}
+kriegsspiel0 -- kriegsspiel ;
+refereedesigner -- kriegsspiel;
+quantifiedresults -- kriegsspiel;
+
+
+
+#####Free kriegspiel movement
+
+{ rank = same; 1860 ; freekriegsspielvt [label = "Anleitung zum Kriegsspiel \n [Wilhelm von Tschischwitz/Germany/1862] "]} 
+kriegsspiel -- freekriegsspielvt; #t75
+
+{ rank = same; 1870 ; freekriegsspielvm [label = " Studien über das Kriegsspiel \n [Wilhelm Jakob Meckel/Germany/1873]"]} 
+freekriegsspielvt -- freekriegsspielvm;
+refereesemifree -- freekriegsspielvm;
+
+{ rank = same; 1880 ; freekriegsspielvvdv [label = "Beitrag zum Kriegsspiel[Julius von Verdy du Vernois/Germany/1876] "]}  
+freekriegsspielvm -- freekriegsspielvvdv;
+refereefree -- freekriegsspielvvdv;
+
+ 
+
+
+
+
+##### UK
+
+
+{ rank = same; 1870; rftcotwg [label="Rules for the conduct of the war-game\n[UK,1872"]}  freekriegsspielvt -- rftcotwg; #s4
+#{ rank = same; 1870; colombgame [label="'Colomb's Naval War Game' [Philip H. Colomb/UK/1878]"]} navalwargaming -- colombgame ; #s55
+#{ rank = same; 1890; introconductwarg [label="Introduction as to Conduct of War Games[Little WMc,UK,1894?]"]} rftcotwg -- introconductwarg ; #p52
+#{ rank = same; 1890; rftcotwgoam [label="Rules for the conduct \nof the war-game on a map\n[War Office,UK,1896"]} introconductwarg -- rftcotwgoam ; #p54
+
+{ rank = same; 1910; floorgames [label = "Floor Games [Wells,uk,1912] \n for kids"]} kriegsspiel -- floorgames [style=dotted];
+{ rank = same; 1910; littlewars [label = "Little Wars [Wells,uk,1913] \n for kids and grown-ups" ]}  floorgames -- littlewars ;
+
+
+
+
+##### FR
+
+{ rank = same; 1940; reglementdekriegsspiel [label ="Règlement de Kriegsspiel, P. Fouré, F. Dodeur et P. Bondoux, France, 1943]"]}  
+kriegsspiel -- reglementdekriegsspiel ;  #s72
+hexboard -- reglementdekriegsspiel; #1st hexagon grid
+
+{ rank = same; 1965; lejeudelaguerre [label ="Le jeu de la guerre [France,Debord G & Becker-Ho A,1965(1987)] \n Units need communication link to arsenal"]} #s3
+{ kriegsspiel; onwar } -- lejeudelaguerre ;  #t49 #s3
+projetlab -- lejeudelaguerre [label = "Situationnisme : permanent play in daily life (no separation) \n blur: disturbing & intense.\n In a 'Battle of Leasures', one has to become the hero of the game experienced vs the Society of Spectacles"] ;  #s50
+
+
+
+
+
+
+##### US
+
+
+{ rank = same; 1870; americankrieg [label = "The American Kriegsspiel\n[William R. Livermore/US/1879]"]} 
+freekriegsspielvvdv -- americankrieg [style=dotted] ;
+{ rank = same; 1880; strategos [label = "Strategos: A Series of American Games of War Based upon Military Principles \n [Charles A.L. Totten/US/1880]"]}  
+americankrieg -- strategos [style=dotted]; 
+referee -- strategos;
+{ rank = same; 1958; news [label = "Navy Electronic Warfare Simulator [US/1958]"]}  usnavalcollege -- news ; #p55
+{ rank = same; 1955; randcwg [label ="RAND Cold War Game [1955-1956]"]} 
+
+{ rank = same; 1950; uswargame [label = "US wargaming hobby movement for middle class"]}  strategos -- uswargame;
+{ rank = same; 1954; gettysburg [label = "Gettysburg \n [Charles S. Roberts/US]"]} uswargame -- gettysburg ;
+{ rank = same; 1954; tactics [label = "Tactics \n [Charles S. Roberts/US]"]} gettysburg -- tactics ;
+{ rank = same; 1958; tactics2 [label = "Tactics 2 \n [Charles S. Roberts/US]"]}  tactics -- tactics2 ;
+{ rank = same; 1977; squadleader [label = "Squad Leader [John Hill/US]"]}  uswargame -- squadleader ;
+{ rank = same; 1977; spqr [label = "SPQR [Berg & Herman/US]"]}  uswargame -- spqr ;
+
+#{ rank = same; 1967; strategyntactics [label = "Strategy & Tactics"]} #fanzine-magazine
+#{ rank = same; 1969; spi [label = "Simulations Publications, Inc. (SPI)"]} #fanzine-magazine
+
+
+########## wargames pre DnD
+
+uswargame -- miniaturewargaming;
+
+{ rank = same; 1970; strategosn [label = "Strategos N \n [David A. Wesely /US/1970]"]}
+strategos -- strategosn ; #s79
+miniaturewargaming -- strategosn;
+
+{ rank = same; 1966; mwim [label = "Modern War in Miniature \n [Michael F. Korns/US/1966] \n A referee & two players"]} miniaturewargaming -- mwim; #p69
+{ rank = same; 1967; braunstein [label = "Braunstein [Wesely M,US,1967]" ]}  mwim -- braunstein  -- dndwoodgrainbox ;
+
+{ rank = same; 1970; newapratt [label = "The Courrier [of NEWA] two-pages set of rules \n [Pratt L,US,1970] \n 1st amateur fantasy wargame system"]}  newapratt -- chainmail ;
+
+{ rank = same; 1971; chainmail [label = "Chainmail \n(with Fantasy supplement)\n [Gary Gygax & Jeff Perren, United States, 1971]"]}   littlewars -- chainmail ; #p90
+
+{ rank = same; 1968; hyboria [label = "Hyboria, play-by-post wargame\n[Bath T,US,1968-1973?]"]} diplomacy -- hyboria [style=dotted];
+hyboria -- dndwoodgrainbox ; 
+# PC centered game-play fostering emergent roleplay \n Random personality creation
+
+{ rank = same; 1971; midgard1 [label = "Midgard \n [Patterson H/UK/1971]"]}  #s70
+{ rank = same; 1972; midgard2 [label = "Midgard II \n [US,1972]"]} midgard1 -- midgard2 ;
+midgard1 -- dndwoodgrainbox [label="Vancian magic"];
+
+
+
+# LARP
+
+####### Pre-larp
+
+{ rank = same; "-500" ; romanhistoricalreenactment [label = "Roman historical reenactment[Rome,-500]"]}  historicalreenactment -- romanhistoricalreenactment; #date to change!
+{ rank = same; 200 ; kamasutra [label = "Kama Sutra\n[India,-400..200?] \n Several roles to sex play"]} sexualroleplay -- kamasutra;
+
+###### treasure hunt games
+
+{ rank = same; "1850"; letterboxing [label="Dartmoor Letterboxing\n[uk,James Perrott,1854]"]} treasurehunt -- letterboxing; #t40
+
+###### murder mystery / parlour games / role taking game / 
+{ rank = same; 1870; mudermysterygames [label="Murder mystery games \n [UK/c.1870]"]}  mudermystery -- mudermysterygames ;
+{ rank = same; 1900; queertrades [label = "The Club of Queer Trades \n [G.K.Chestertonuk/UK/1905] \n tell a commercial org. staging LARP-like adventures entertaining its customers"]}  roletakingparlourgames -- queertrades [style=dotted];  
+{ rank = same; 1920; boxedparlourgames [label= "Boxed parlour games \n [1920-1960]"] } roletakingparlourgames -- boxedparlourgames ; 
+{ rank = same; 1930; jurybox [label="Jury Box [1935]"]} boxedparlourgames -- jurybox ;
+
+
+##### secret identity
+{ rank = same; 1850; winkmurder [label="Wink murder"] } secretidentity -- winkmurder;  #t35
+{ rank = same; 1986; mafia [label="Mafia \n [Dmitry Davidoff/USSR]"]}  secretidentity -- mafia;
+{ rank = same; 2001; werewolf [label="Les Loups-garous de Thiercelieux \n ['Werewolf']\n [Philippe des Pallières & Hervé Marly/France]"]} 
+mafia -- werewolf ;
+{ rank = same; 2002; bang [label="Bang! \n [Emiliano Sciarra/Italy]"]} secretidentity -- bang;
+{ rank = same; 2008; sanguosha [label="Sanguosha  三国杀 \n [China]"]}  bang -- sanguosha ;
+{ rank = same; 2010; theresistance [label="The Resistance \n [Don Eskridge]"]} secretidentity -- theresistance;
+{ rank = same; 2013; loveletter [label="Love letter \n [Seiji Kanai, Japan]"]} secretidentity -- loveletter;
+{ rank = same; 2016; secrethitler [label="Secret Hitler \n [Max Temkin,Mike Boxleiter,Tommy Maranges]"]} secretidentity  -- secrethitler;
+
+########### killers 
+{ rank = same; 1940; assassingameparties [label="Assassination game parties \n [US/c.1940]"]} assassingame -- assassingameparties [style=dotted] ;
+{ rank = same; 1953; the7thvictim [label="The Seventh Victim \n [US/Robert Sheckley/1953]"]} assassingame -- the7thvictim [style=dotted] ; #p71
+{ rank = same; 1965; ladecimavittima [label="La Decima Vittima (The 10th Victim movie) \n [Italy/1965]"]} 
+{ rank = same; 1966; assassingameuscampus [label="Assassination game on US campuses \n [US/1966]"]}  ladecimavittima -- assassingameuscampus [style=dotted] ;
+{ rank = same; 1981; killer [label="Killer: the Game of Assassination"]}   assassingameuscampus -- killer [style=dotted] ;
+{ rank = same; 1998; killer4 [label="Killer 4th ed"]}  killer -- killer4 ; 
+{ rank = same; 2006; cruel2bkind [label="Cruel 2 B Kind [McGonigal&Bogost, US] \n benevolent variant assassination game"]} killer4 -- cruel2bkind ; 
+
+############# cosplay
+{ rank = same; 1000; allsoulsday [label="All Souls’ Day dressups as saints, angels or devils [EU,1000]"]} dressup -- allsoulsday ; #s85
+{ rank = same; 1920; halloween [label="Halloween : popular and community celebrations [US,1920s]"]} allsoulsday -- halloween ; #s85
+{ rank = same; 1940; worldcon1 [label="1st scifi convention, Worldcon I [US,1939]"]} cosplay -- worldcon1 ; #s84
+{ rank = same; 1966; sfca [label="Society for Creative Anachronism \n [US] \n medieval larp at Berkeley"]} cosplay -- sfca ;
+{ rank = same; 1969; mmmm [label="Markland Medieval Mercenary Militia [US] \n medieval larp at U Maryland"]} sfca -- mmmm ; 
+
+
+############# larp
+{ rank = same; 1977; dagorhir [label="Dagorhir [US] \n 1st fantasy larp"]}  larp -- dagorhir;
+mmmm -- dagorhir ;
+{ rank = same; 1981; ifgs [label="Interactive Fantasy Gaming Society"] } larp -- ifgs; # us linear larps (staged encounters)
+{ rank = same; 1982; treasuretrap [label="Treasure Trap"] } larp -- treasuretrap; # uk linear larps (staged encounters)
+{ rank = same; 1983; rekon1 [label="Rekon-1"] } larp -- rekon1;  # us interactive larp
+{ rank = same; 1993; mindeye [label ="Mind Eye Theatre"] }  larp -- mindeye;
+
+
+
+
+######### TTRPGs
+
+
+{ rank = same; 1971; blackmoor [label="Blackmoor \n Dave Arneson's basement"]} ttrpg -- blackmoor;
+gamemaster -- blackmoor;
+{ rank = same; 1974; dnd [label="Dungeons & Dragons woodgrain box [Gygax & Arneson,US]"]}  blackmoor -- dnd;
+{ rank = same; 1981; callofcthulhu [label="Call of Cthulhu"]} dnd -- callofcthulhu;
+{ rank = same; 1991; vampirethemasquerade [label="Vampire the Masquerade"]} dnd -- vampirethemasquerade;
+{ rank = same; 1999; theforge [label="The Forge"]} dnd -- theforge;
+{ rank = same; 2010; apocalypseworld [label="Apocalypse World"]} dnd -- apocalypseworld;
+
+
+
+
+
+########## CYOA - adventure book -- gamebook
+
+{ rank = same; 1976; sugarcaneisland [label="[The Adventures of You on] Sugar Cane Island"]} gamebook -- sugarcaneisland;  #PreCYOA
+{ rank = same; 1976; buffalocastle [label="Solitaire adventure: Buffalo Castle" ]} gamebook -- buffalocastle;
+{ rank = same; 1982; warlockfiretopmountain [label="The Warlock of Firetop Mountain"]}  buffalocastle -- warlockfiretopmountain;
+{ rank = same; 1983; sorcery [label="Sorcery!"]}  warlockfiretopmountain -- sorcery;
+{ rank = same; 1984; lonewolf [label="Lone Wolf"]}   sorcery -- lonewolf;
+
+
+
+
+
+
+{ rank = same; 1957 ; projetlab [label="Projet pour un labyrinthe éducatif \n [Debord G/France/1957] \n Exhibition is a labyrinth ending \n with an original kriegspiel"]} #p51
+realmaze -- projetlab;
+
+{ rank = same; 1600; wuzazu [label="Wuzazu \n ['Rock Paper Scissor'] \n [Xié Zhaozhi/China/1630]" ]} #t60
+noboard -- wuzazu;
+
+
+########## video game
+
+{ rank = same; 1962; spacewar [label="Spacewar!"]}   computergame -- spacewar; #s80 
+{ rank = same; 1973; pong [label="Pong!"]}   videogame -- pong; #s80 
+{ rank = same; 1977; adventure [label="Adventure"]}   textadventure -- adventure; #s80 
+{ rank = same; 1984; thehobbit [label="The Hobbit"]}   graphicalinteractivefiction -- thehobbit; #s80 
+{ rank = same; 1994; tetrisvariant [label="Tetris variant\nfor Hagenuk MT-2000"]}   mobilegame -- tetrisvariant; #t81 
+
+} #end of games
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
