@@ -45,7 +45,7 @@ I would kike to work on the taxonomy of relations between cultural published gam
 - Tweet it [@pascaliensis](https://twitter.com/Pascaliensis).
 - Comment it on your social media.
 - Cite me in your academic work : 
-> Martinolli, Pascal. 2019. « Timeline Tree of Games and Board Games, celebrating more than 8000 years of game design innovations. » Dataset and dot language code.
+> Martinolli, Pascal. 2020. « Timeline Tree of Games and Board Games, celebrating more than 8000 years of game design innovations. » Dataset and dot language code.
 - Print it and display it in your school, library, exhibition, etc.
 - Send me an email : pascal.umontreal [at] gmail.com
 
