@@ -3,7 +3,7 @@
 
 * Download the **[PDF poster](https://github.com/pmartinolli/TTGBG/blob/master/files/ttgbg.pdf)**
 
-[![TTTTRPG snapshot](https://github.com/pmartinolli/TTTTRPG/blob/master/files/ttgbg-snapshot.png)](https://github.com/pmartinolli/TTTTRPG/blob/master/files/ttgbg.pdf)
+[![TTGBG snapshot](https://github.com/pmartinolli/TTGBG/blob/master/files/ttgbg-snapshot.png)](https://github.com/pmartinolli/TTGBG/blob/master/files/ttgbg.pdf)
 
 ## Long term goal
 
