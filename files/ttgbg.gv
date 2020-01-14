@@ -1,4 +1,4 @@
-##### Version 20200113
+##### Version 20200114
 
 ###################################################################
 ###########                                              ##########
@@ -13,20 +13,17 @@
 ###########           Header : Metadata                  ##########
 ###################################################################
 
-##### Title: TTGBG - Timeline Tree of Games, Boardgames and Game Designs
-##### Subtitle: Celebrating centuries of game innovations from -6000 to today
+##### Title: TTGBG - Timeline Tree of Games and Board Games,
+##### Subtitle: Celebrating more than 8000 years of game design innovations 
 ##### Author: Pascal Martinolli 
 ##### Licence: CC-BY-NC-SA
 ##### Project date: 2016-2020
 ##### Join me at: pascal.umontreal at gmail.com 
-##### Code source and files at : 
-##### Follow this project at: 
-##### Code explained here in english: 
-#####                     in french:  
+##### Code source and files at : https://github.com/pmartinolli/TTGBG
 ##### Based on the source code developped by Todd Lehman for his TeX Family Tree: https://tex.stackexchange.com/questions/42594/tex-family-tree-with-timeline
 
-##### Contributors : James Wallis.
-##### References : cf. sources-gametimeline.txt file
+##### Contributor : James Wallis.
+##### References : cf. https://github.com/pmartinolli/TTGBG/blob/master/files/ttgbg-sources.md 
 
 
 ###################################################################
@@ -35,11 +32,11 @@
 
 ##### Language: dot
 ##### Compile with: dot "$(FULL_CURRENT_PATH)"  -Tps -v -o "$(CURRENT_DIRECTORY)\$(NAME_PART).ps"
-##### Then generate PDF with Acrobat Distiller: double-click on the PS file with Parameters = Oversized Pages : 
+##### Then generate PDF with Acrobat Distiller: double-click on the PS file with Parameters = Oversized Pages : 5 m x 4.5 m
 
 graph TTGBG_timeline {     
 
-#graph [rankdir=LR]        # activate if you prefer to have a direction of the graph left to right (NB: PS file with Parameters = Oversized Pages : 15 m x 7 m)
+#graph [rankdir=LR]        # activate if you prefer to have a direction of the graph left to right 
 
 node [shape=none]          # no frame for each informations
 edge [color=lightgrey]     # standard color of the links between informations
@@ -54,7 +51,7 @@ edge [fontsize=20; fontname="Helvetica"]         # standard size of the links fo
 {
 node [];
 edge [color=lightgrey; fontcolor=lightgrey; fontsize=50]
-{ rank = same; future; title [label=" TTGBG - Timeline Tree of Games, Boardgames and Game Designs\nCelebrating centuries of game innovations from -6000 to today\nPascal Martinolli (CC-BY-NC-SA) 2016-2020\n\ngithub.com/pmartinolli/" fontsize=100 fontname="Helvetica" shape=box]}
+{ rank = same; future; title [label="Timeline Tree of Games and Board Games,\ncelebrating more than 8000 years of game design innovations\nPascal Martinolli (CC-BY-NC-SA) 2016-2020\n\ngithub.com/pmartinolli/" fontsize=100 fontname="Helvetica" shape=box]}
 }
 
 
@@ -228,81 +225,79 @@ node [fontcolor=orange, color=orange];
   edge [fontcolor=orange, color=orange];
 
 { play [label="play"]} 
-{ game [label="game"]} play -- game;
-
-{ outdoorgame [label="outdoor game\nrecreation"]} embodiedgame -- outdoorgame; #t1 
-{ sport [label="sport"]} outdoorgame -- sport;
+	{ game [label="game"]} play -- game;
+	{ religiousmeaning [label="religious meaning"]} play -- religiousmeaning; 
+	{ outdoorgame [label="outdoor game\nrecreation"]} game -- outdoorgame; #t1 
+		{ sport [label="sport"]} outdoorgame -- sport;
 
 { racing [label="racing"]}
-{ racingfighting [label="racing and fighting"]} racing -- racingfighting; #s21
-{ chasingevading [label="chasing, evading and capturing"]} racingfighting -- chasingevading ;
-{ racingcollecting [label="racing and collecting"]}
+	{ racingfighting [label="racing and fighting"]} racing -- racingfighting; #s21
+		{ chasingevading [label="chasing, evading and capturing"]} racingfighting -- chasingevading ;
+			{ racingcollecting [label="racing and collecting"]} racing -- racingcollecting;
 
 { territorialacquisition [label="territorial acquisition"]} {chasingevading;collecting} -- territorialacquisition;
 
 { wargaming [label="wargaming simulation"]} chasingevading -- wargaming;
-{ miniaturewargaming [label="miniature wargaming"]} wargaming -- miniaturewargaming;
-{ navalwargaming [label="naval wargaming"]} wargaming -- navalwargaming;
-{ megagame [label="megagame"]} {wargaming;larp} -- megagame ;
-{ politicalwargaming [label="political wargiming"]} wargaming -- politicalwargaming ;
+	{ miniaturewargaming [label="miniature wargaming"]} wargaming -- miniaturewargaming;
+	{ navalwargaming [label="naval wargaming"]} wargaming -- navalwargaming;
+	{ megagame [label="megagame"]} {wargaming;larp} -- megagame ;
+	{ politicalwargaming [label="political wargiming"]} wargaming -- politicalwargaming ;
 
 { twoplayers [label="two players"]} 
-{ soloplay [label="solo play"]} twoplayers -- soloplay; 
-{ smallgroupplayers [label="small group of players"]} twoplayers -- smallgroupplayers;
-{ exceptionbasedgame [label="exception-based game"]} smallgroupplayers -- exceptionbasedgame; #each player has different power
+	{ soloplay [label="solo play"]} twoplayers -- soloplay; 
+	{ smallgroupplayers [label="small group of players"]} twoplayers -- smallgroupplayers;
+		{ exceptionbasedgame [label="exception-based game"]} smallgroupplayers -- exceptionbasedgame; #each player has different power
+
+{ domino [label="domino"]} mobilepiece -- domino;
+	{ card [label="card"]} domino -- card;
+		{ sheddingtypecard [label="shedding-type card game"]} card -- sheddingtypecard; #t102
 
 { linearpairingdomino [label="linear pairing"]} domino -- linearpairingdomino;
-{ suitedcard [label="building suit of card"]} linearpairingdomino -- suitedcard;
-{ trumpcard [label="game of trump or ruff"]} suitedcard -- trumpcard;   
-{ tricktacking [label="trick-taking cardgames"]} trumpcard -- tricktacking;
-{ multitrick [label="multi-trick"]} tricktacking -- multitrick;
-{ pointtrick [label="point-trick"]} tricktacking -- pointtrick;
-{ plaintrick [label="plain-trick"]} tricktacking -- plaintrick;
-{ trickndraw [label="trick-and-draw"]} tricktacking -- trickndraw;
-{ trickavoidance [label="trick-avoidance"]} tricktacking -- trickavoidance;
-
-{ sheddingtypecard [label="shedding-type card game"]} card -- sheddingtypecard; #t102
+	{ suitedcard [label="building suit of card"]} linearpairingdomino -- suitedcard;
+		{ trumpcard [label="game of trump or ruff"]} suitedcard -- trumpcard;   
+			{ tricktacking [label="trick-taking cardgames"]} trumpcard -- tricktacking;
+				{ multitrick [label="multi-trick"]} tricktacking -- multitrick;
+				{ pointtrick [label="point-trick"]} tricktacking -- pointtrick;
+				{ plaintrick [label="plain-trick"]} tricktacking -- plaintrick;
+				{ trickndraw [label="trick-and-draw"]} tricktacking -- trickndraw;
+				{ trickavoidance [label="trick-avoidance"]} tricktacking -- trickavoidance;
 
 { sowing [label="sowing and capturing"]} sowing -- collecting; #mancala
-{ collecting [label="collecting"]} 
-{ building [label="building"]} sowing -- building;
-{ unbuilding [label="unbuilding"]} building -- unbuilding;
-{ tileplacement [label="tile placement"]} building -- tileplacement;
-{ tileworkerplacement [label="tile & worker placement"]} tileplacement -- tileworkerplacement;
-{ tableaubuilding [label="tableau building"]}  {suitedcard;building} -- tableaubuilding ;
-
-{ collectiblecard [label="collectible card"]}  {suitedcard;soloplay} -- collectiblecard ;
-{ collectibledeckbuilding [label="deck building \nw/collectible card"]} {collectiblecard;building} -- collectibledeckbuilding;
-{ completedeckbuilding [label="deck building \nw/complete card set"]} collectibledeckbuilding -- completedeckbuilding;
-
+	{ collecting [label="collecting"]} 
+	{ building [label="building"]} sowing -- building;
+		{ unbuilding [label="unbuilding"]} building -- unbuilding;
+		{ tileplacement [label="tile placement"]} building -- tileplacement;
+			{ tileworkerplacement [label="tile & worker placement"]} tileplacement -- tileworkerplacement;
+		{ tableaubuilding [label="tableau building"]}  building -- tableaubuilding ;
+		{ collectiblecard [label="collectible card"]}  suitedcard -- collectiblecard ;
+			{ collectibledeckbuilding [label="deck building \nw/collectible card"]} {collectiblecard;building} -- collectibledeckbuilding;
+			{ completedeckbuilding [label="deck building \nw/complete card set"]} collectibledeckbuilding -- completedeckbuilding;
 
 
-{ pretendplay [label="pretend play"]} embodiedgame -- pretendplay;
-{ sexualroleplay [label="sexual role play"]} pretendplay -- sexualroleplay;
-{ historicalreenactment [label="historical reenactment"]} pretendplay -- historicalreenactment;
-
-{ treasurehunt [label="treasure hunt"]} pretendplay -- treasurehunt;
-{ realmaze [label="maze"]} pretendplay -- realmaze;
+{ pretendplay [label="pretend play"]} play -- pretendplay;
+	{ sexualroleplay [label="sexual role play"]} pretendplay -- sexualroleplay;
+	{ historicalreenactment [label="historical reenactment"]} pretendplay -- historicalreenactment;
+	{ treasurehunt [label="treasure hunt"]} pretendplay -- treasurehunt;
+	{ realmaze [label="maze"]} pretendplay -- realmaze;
 
 
 { dressup [label="dress up"]} pretendplay -- dressup; 
-{ cosplay [label="cosplay"]} dressup -- cosplay; 
-{ larp [label="larp"]} cosplay -- larp; 
-
-{ ttrpg [label="ttrpg"]} wargaming -- ttrpg; 
-{ gamebook [label="gamebook"]} {soloplay;ttrpg} -- gamebook; 
-{ storygame [label="storygame"]} ttrpg -- storygame; 
+	{ cosplay [label="cosplay"]} dressup -- cosplay; 
+		{ larp [label="larp"]} cosplay -- larp; 
 
 
-{ religiousmeaning [label="religious meaning"]} play -- religiousmeaning; 
+gamemaster -- ttrpg;
+storyfirst -- ttrpg
+noendgame -- ttrpg;
+{  rank = same; 1960 ; ttrpg [label="ttrpg"]} wargaming -- ttrpg; 
+	{ gamebook [label="gamebook"]} soloplay -- gamebook; 
+	{ storygame [label="storygame"]} ttrpg -- storygame; 
+
+
 
 
 
 } #end of gameplay
-
-
-
-
 
 
 ########### Board & pieces
@@ -310,50 +305,44 @@ node [fontcolor=orange, color=orange];
 node [fontcolor=red3, color=red3];
   edge [color=red3];
 
-{ embodiedgame [label="embodied game"]}  play -- embodiedgame;
+#{ ballgame [label="ball game"]}  sport -- ballgame;
+#	{ batnball [label="Bat-and-ball"]}  ballgame -- batnball;
+#	{ racquetnball [label="Racquet-and-ball"]}  ballgame -- racquetnball;
+#	{ handnball [label="Hand-and-ball-stricking"]}  ballgame -- handnball;
+#	{ netsport [label="Non-racquet net sport"]}  ballgame -- netsport;
+#	{ targetsport [label="Target/precision sport"]}  ballgame -- targetsport;
+#	{ cuesport [label="Cue sport"]}  targetsport -- cuesport;
+#{ goalsport [label="Goal sport"]} sport -- goalsport;
 
-#{ ballgame [label="ball game"]}  embodiedgame -- ballgame;
-#{ batnball [label="Bat-and-ball"]}  ballgame -- batnball;
-#{ racquetnball [label="Racquet-and-ball"]}  ballgame -- racquetnball;
-#{ handnball [label="Hand-and-ball-stricking"]}  ballgame -- handnball;
-#{ netsport [label="Non-racquet net sport"]}  ballgame -- netsport;
-#{ goalsport [label="Goal sport"]}  goalsport -- netsport;
-#{ targetsport [label="Target/precision sport"]}  ballgame -- targetsport;
-#{ cuesport [label="Cue sport"]}  targetsport -- cuesport;
 
 { toyplay [label="toy play"]} norules -- toyplay;
-{ puppetplay [label="puppet play"]} toyplay -- puppetplay;
+	{ puppetplay [label="puppet play"]} toyplay -- puppetplay;
 
 { noboard [label="no board"]} game -- noboard; #knuckebones    
 
 { tabletopgame [label="tabletop game"]} noboard -- tabletopgame;
-
-{ board [label="board game"]} tabletopgame -- board;
+	{ board [label="board game"]} tabletopgame -- board;
 
 { circularboard [label="circular board"]} board -- circularboard; #mancala
-{ patternboard [labe="symetrical patterned board"]} circularboard -- patternboard; 
+	{ patternboard [labe="symetrical patterned board"]} circularboard -- patternboard; 
+	{ gridboard [label="grid board"]} circularboard -- gridboard; 
+	{ symetricalboard [label="symetrical grid board"]} gridboard -- symetricalboard; 
 { linearboard [label="linear board"]} board -- linearboard; 
-{ lineareducationalboard [label="linear board"]} linearboard -- lineareducationalboard;
-{ gridboard [label="grid board"]} circularboard -- gridboard; 
-{ symetricalboard [label="symetrical grid board"]} gridboard -- symetricalboard; 
+	{ lineareducationalboard [label="linear board"]} linearboard -- lineareducationalboard;
 
 { twocoloredboard [label="two-colored checkered board"]} symetricalboard -- twocoloredboard; 
-{ multicoloredboard [label="multicolored terrains board\nred vs blue color coding"]} twocoloredboard -- multicoloredboard; 
-{ map [label="mapped board"]} multicoloredboard -- map; 
-{ gridmap [label="600x600 grid map (w/terrains)"]} map -- gridmap; 
-{ hexboard [label="hex mapped board"]} gridmap -- hexboard; 
+	{ multicoloredboard [label="multicolored terrains board\nred vs blue color coding"]} twocoloredboard -- multicoloredboard; 
+		{ map [label="mapped board"]} multicoloredboard -- map; 
+			{ gridmap [label="600x600 grid map (w/terrains)"]} map -- gridmap; 
+				{ hexboard [label="hex mapped board"]} gridmap -- hexboard; 
 
 { mobilepiece [label="mobile piece"]} tabletopgame -- mobilepiece;
-{ onepieceoneindividual [label="1 piece = 1 individual"]} mobilepiece -- onepieceoneindividual;
-{ onepieceonegroup [label="1 piece = 1 group of soldiers"]} onepieceoneindividual -- onepieceonegroup -- miniaturewargaming;
-{ flippedpiece [label="flipped piece"]} mobilepiece -- flippedpice;  #reversi
+	{ onepieceoneindividual [label="1 piece = 1 individual"]} mobilepiece -- onepieceoneindividual;
+		{ onepieceonegroup [label="1 piece = 1 group of soldiers"]} onepieceoneindividual -- onepieceonegroup -- miniaturewargaming;
+	{ flippedpiece [label="flipped piece"]} mobilepiece -- flippedpice;  #reversi
 
 
-{ computergame [label="computer game"]} 
-{ videogame [label="[console] video game"]} computergame -- videogame;
-{ mobilegame [label="mobile game"]} videogame -- mobilegame;
-{ textadventure [label="text adventure game"]} computergame -- textadventure;
-{ graphicalinteractivefiction [label="graphical interactive fiction"]} textadventure -- graphicalinteractivefiction;
+
 
 
 } #end of board & pieces
@@ -373,42 +362,37 @@ node [fontcolor=red3, color=red3];
 { uncertainty [label="uncertainty"]}  
 
 { randomness [label="randomness"]} uncertainty -- randomness;
-
-{ throwingsticks [label="throwing sticks"]}  randomness -- throwingsticks;
-{ knucklebone [label="knucklebone"]}  randomness -- knucklebone;
-{ dice [label="dice"]} knucklebone -- dice;
-{ d4 [label="d4"]} {knucklebone;dice} -- d4;
-{ d6 [label="d6"]} dice -- d6;
-{ spinningdice [label="spinning dice"]} dice -- spinningdice;
-{ rollnkeep [label="roll n keep"]} dice -- rollnkeep;
+	{ throwingsticks [label="throwing sticks"]}  randomness -- throwingsticks;
+	{ knucklebone [label="knucklebone"]}  randomness -- knucklebone;
+		{ dice [label="dice"]} knucklebone -- dice;
+			{ d4 [label="d4"]} {knucklebone;dice} -- d4;
+			{ d6 [label="d6"]} dice -- d6;
+			{ spinningdice [label="spinning dice"]} dice -- spinningdice;
+			{ rollnkeep [label="roll n keep"]} dice -- rollnkeep;
 
 { lottery [label="lottery"]} gambling -- lottery;
-{ gambling [label="gambling"]}  {randomness;imperfectinformation} -- gambling ;
-{ bidding [label="bidding"]} gambling -- bidding;
-{ stockexchange [label="stock exchange simulation"]} bidding -- stockexchange;
+	{ gambling [label="gambling"]}  {randomness;imperfectinformation} -- gambling ;
+		{ bidding [label="bidding"]} gambling -- bidding;
+			{ stockexchange [label="stock exchange simulation"]} bidding -- stockexchange;
 
 { imperfectinformation [label="imperfect information game"]}  uncertainty -- imperfectinformation ;
-
-{ negociationgame [label="negociation game"]} imperfectinformation -- negociationgame;
+	{ negociationgame [label="negociation game"]} imperfectinformation -- negociationgame;
 negociationgame -- politicalwargaming;
 
-{ twomapsgame [label="2 maps of the same game"]} 
-
-{ domino [label="domino"]} mobilepiece -- domino;
-{ card [label="card"]} domino -- card;
-
+{ twomapsgame [label="2 maps of the same game"]}  imperfectinformation -- twomapsgame;
 
 { secretidentity [label="secret identity"]} pretendplay -- secretidentity; 
-{ roletakingparlourgames [label="role taking parlour game"]} secretidentity -- roletakingparlourgames; #t34
-{ murdermystery [label="murder mystery"]} roletakingparlourgames -- murdermystery;
-{ investigation [label="investigation"]} murdermystery -- investigation;
-{ assassingame [label="assassin games"]} roletakingparlourgames -- assassingame;
+	{ roletakingparlourgames [label="role taking parlour game"]} secretidentity -- roletakingparlourgames; #t34
+	{ assassingame [label="assassin games"]} roletakingparlourgames -- assassingame;
+	{ murdermystery [label="murder mystery"]} roletakingparlourgames -- murdermystery;
+		{ investigation [label="investigation"]} murdermystery -- investigation;
+
 
 { semanticgame [label="semantic game"]} uncertainty -- semanticgame; 
-{ wordbuilding [label="word building"]} semanticgame -- wordbuilding; 
-{ deciphering [label="deciphering"]} semanticgame -- deciphering; 
-{ codingdecoding [label="coding-decoding"]} deciphering -- codingdecoding; 
-{ storyfirst [label="story first"]} semanticgame -- storyfirst -- ttrpg ; 
+	{ wordbuilding [label="word building"]} semanticgame -- wordbuilding; 
+	{ deciphering [label="deciphering"]} semanticgame -- deciphering; 
+		{ codingdecoding [label="coding-decoding"]} deciphering -- codingdecoding; 
+	{ storyfirst [label="story first"]} semanticgame -- storyfirst ; 
 
 
 } #end of gameplay
@@ -431,34 +415,39 @@ edge [color=chocolate4]
 
 { norules [label="No rules"]} play -- norules;
 
+	{ goal [label="Goal / Objective"]} norules -- goal;
 
+		{ noendgame [label="No endgame conditions"]} goal -- noendgame;
 
+		{ rules [label="Rules"]} goal -- rules;
+		
+		{ writtenrules [label="Written rules"]} rules -- writtenrules;
+			{ resolutionrules [label="Resolution rules"]} rules -- resolutionrules;
+			{ generativerules [label="Generative rules"]} rules -- generativerules;
+			{ complexrules [label="Complex rules"]} writtenrules -- complexrules;
+#				{ complexdebattedrules [label="Complex and debatted rules"]} complexrules -- complexdebattedrules;
+#				{ quantifiedresults [label="Quantified results of actions"]} complexrules -- quantifiedresults;
 
-{ goal [label="Goal / Objective"]} norules -- goal;
-{ noendgame [label="No endgame conditions"]} goal -- noendgame;
-
-{ rules [label="Rules"]} goal -- rules;
-{ writtenrules [label="Written rules"]} rules -- writtenrules;
-
-{ resolutionrules [label="Resolution rules"]} rules -- resolutionrules;
-{ generativerules [label="Generative rules"]} rules -- generativerules;
-{ adjucationruling [label="Adjudication ruling"]} rules -- adjucationruling;
-
-{ complexrules [label="Complex rules"]} writtenrules -- complexrules;
-{ complexdebattedrules [label="Complex and debatted rules"]} complexrules -- complexdebattedrules;
-{ quantifiedresults [label="Quantified results of actions"]} complexrules -- quantifiedresults;
- 
-{ referee [label="Referee"]} adjucationruling -- referee; # sports
-{ refereewassistants [label="Referee w/ assistants"]} referee -- refereewassistants; 
-{ refereedesigner [label="Referee is scenario designer"]} referee -- refereedesigner ; 
-{ refereesemifree [label="Referee freed from some rules"]} adjucationruling -- refereesemifree; 
-{ refereefree [label="Referee renders decisions completely\non tactical experience (not on rules)"]} adjucationruling -- refereefree; 
+{ adjucationruling [label="Adjudication ruling"]} rules -- adjucationruling; 
+	{ referee [label="Referee"]} adjucationruling -- referee; # sports
+		{ refereewassistants [label="Referee w/ assistants"]} referee -- refereewassistants; 
+		{ refereedesigner [label="Referee is scenario designer"]} referee -- refereedesigner ; 
+	{ refereesemifree [label="Referee freed from some rules"]} adjucationruling -- refereesemifree; 
+			{ refereefree [label="Referee renders decisions completely\non tactical experience (not on rules)"]} adjucationruling -- refereefree; 
 
 
 
 { gamemaster [label="Game Master"]} adjucationruling -- gamemaster; #ttrpg
-{ gmless [label="GM-less"]} gamemaster -- gmless;  #baron munch
-{ turninggm [label="Turning GM"]} gamemaster -- turninggm;  #arsmagica
+	{ gmless [label="GM-less"]} gamemaster -- gmless;  #baron munch
+	{ turninggm [label="Turning GM"]} gamemaster -- turninggm;  #arsmagica
+
+
+{  rank = same; 1940 ; computergame [label="computer game"]} writtenrules -- computergame;
+	{ videogame [label="[console] video game"]} computergame -- videogame;
+		{ mobilegame [label="mobile game"]} videogame -- mobilegame;
+	{ textadventure [label="text adventure game"]} computergame -- textadventure;
+		{ graphicalinteractivefiction [label="graphical interactive fiction"]} textadventure -- graphicalinteractivefiction;
+
 
 
 
@@ -487,7 +476,7 @@ node [];
 { rank = same; "-400 Ma" ; reptilesplay [label="Reptiles play ?"]} norules -- reptilesplay; #t82
 { rank = same; "-250 Ma" ; mammalsplay [label="Mammals play ?"]} rules -- mammalsplay; #t82
 { rank = same; "-80 Ma" ; primatesplaygame [label="Primates play ?"]} game -- primatesplaygame; #t82
-{ rank = same; "-6 Ma" ; homininisplaygame [label="Hominini play ?"]} embodiedgame -- homininisplaygame; #speech + specialization ready #t82
+{ rank = same; "-6 Ma" ; homininisplaygame [label="Hominini play ?"]} outdoorgame -- homininisplaygame; #speech + specialization ready #t82
 { rank = same; "-2 Ma" ; homosplaytoy [label="Homo play ?"]} toyplay -- homosplaytoy; #stone tools #t82
 { rank = same; "-50.000" ; homosapienssplay [label="Homo sapiens play"]} pretendplay -- homosapienssplay; # abstract thinking, planning depth, symbolic behavior,  cumulative cultural adaptation, social norms, language, and extensive help and cooperation beyond close kin #t83
 
@@ -1039,13 +1028,13 @@ venturini -- kriegsspiel0 [style=dotted]; #s36
 wargaming -- kriegsspiel0; #1st time
 refereewassistants -- kriegsspiel0; #1st time 
 twomapsgame -- kriegsspiel0;
-complexdebattedrules -- kriegsspiel0;
+#complexdebattedrules -- kriegsspiel0;
 
 
 { rank = same; 1830 ; kriegsspiel [label = "Anleitung zur Darstellung militaerischer \n Manoever mit dem Apparat des Kriegs-spiels \n [GHRJ von Reisswitz (son)/Germany/1824]"]}
 kriegsspiel0 -- kriegsspiel ;
 refereedesigner -- kriegsspiel;
-quantifiedresults -- kriegsspiel;
+#quantifiedresults -- kriegsspiel;
 
 
 
