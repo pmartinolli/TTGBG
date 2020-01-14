@@ -83,7 +83,7 @@ Informations in the source code are pure facts, therefore they cannot be copyrig
 
 * License / Licence : [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-* Contributors (so far) : James Wallis.
+* Contributor : James Wallis.
 
 * Commments and collaborations are welcomed at / Commentaires et collaborations bienvenus : pascal.umontreal [at] gmail.com
 
