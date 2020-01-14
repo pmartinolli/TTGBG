@@ -230,7 +230,7 @@ node [fontcolor=orange, color=orange];
 { play [label="play"]} 
 { game [label="game"]} play -- game;
 
-{ outdoorgame [label="outdoor game"]} embodiedgame -- outdoorgame;
+{ outdoorgame [label="outdoor game\nrecreation"]} embodiedgame -- outdoorgame; #t1 
 { sport [label="sport"]} outdoorgame -- sport;
 
 { racing [label="racing"]}
@@ -989,7 +989,7 @@ drafting -- sevenwonders;
 
 ############  games of territorial acquisition 
 
-{ rank = same; "-3000" ; weihai [label = "Wei-Hai \n [China/c.-3000] \n 'Encirclement': victory for outflanking the ennemy"]} ;  #s1  
+{ rank = same; "-3000" ; weihai [label = "Wei-Hai \n [China/c.-3000] \n 'Encirclement': victory for outflanking the ennemy"]} ;  #s104  
 territorialacquisition -- weihai;
 { rank = same; "-400"; weiqi [label ="Yi (Weiqi) \n[China,-400] \n 1st game of territorial acquisition" ]}  weihai -- weiqi ; 
 territorialacquisition -- weiqi;
@@ -1070,13 +1070,13 @@ refereefree -- freekriegsspielvvdv;
 ##### UK
 
 
-{ rank = same; 1870; rftcotwg [label="Rules for the conduct of the war-game\n[UK,1872"]}  freekriegsspielvt -- rftcotwg; #s4
+{ rank = same; 1870; rftcotwg [label="Rules for the conduct of the war-game\n[UK,1872"]}  freekriegsspielvt -- rftcotwg; #p4
 #{ rank = same; 1870; colombgame [label="'Colomb's Naval War Game' [Philip H. Colomb/UK/1878]"]} navalwargaming -- colombgame ; #s55
 #{ rank = same; 1890; introconductwarg [label="Introduction as to Conduct of War Games[Little WMc,UK,1894?]"]} rftcotwg -- introconductwarg ; #p52
 #{ rank = same; 1890; rftcotwgoam [label="Rules for the conduct \nof the war-game on a map\n[War Office,UK,1896"]} introconductwarg -- rftcotwgoam ; #p54
 
-{ rank = same; 1910; floorgames [label = "Floor Games [Wells,uk,1912] \n for kids"]} kriegsspiel -- floorgames [style=dotted];
-{ rank = same; 1910; littlewars [label = "Little Wars [Wells,uk,1913] \n for kids and grown-ups" ]}  floorgames -- littlewars ;
+{ rank = same; 1910; floorgames [label = "Floor Games [Wells,uk,1912] \n for kids"]} kriegsspiel -- floorgames [style=dotted]; #t10 
+{ rank = same; 1910; littlewars [label = "Little Wars [Wells,uk,1913] \n for kids and grown-ups" ]}  floorgames -- littlewars ; #t14
 
 
 
@@ -1099,19 +1099,19 @@ projetlab -- lejeudelaguerre [label = "Situationnisme : permanent play in daily 
 ##### US
 
 
-{ rank = same; 1870; americankrieg [label = "The American Kriegsspiel\n[William R. Livermore/US/1879]"]} 
+{ rank = same; 1870; americankrieg [label = "The American Kriegsspiel\n[William R. Livermore/US/1879]"]}  #p9
 freekriegsspielvvdv -- americankrieg [style=dotted] ;
-{ rank = same; 1880; strategos [label = "Strategos: A Series of American Games of War Based upon Military Principles \n [Charles A.L. Totten/US/1880]"]}  
+{ rank = same; 1880; strategos [label = "Strategos: A Series of American Games of War Based upon Military Principles \n [Charles A.L. Totten/US/1880]"]}  #s8 
 americankrieg -- strategos [style=dotted]; 
 referee -- strategos;
 { rank = same; 1958; news [label = "Navy Electronic Warfare Simulator [US/1958]"]}  usnavalcollege -- news ; #p55
 { rank = same; 1955; randcwg [label ="RAND Cold War Game [1955-1956]"]} 
 
 { rank = same; 1950; uswargame [label = "US wargaming hobby movement for middle class"]}  strategos -- uswargame;
-{ rank = same; 1954; gettysburg [label = "Gettysburg \n [Charles S. Roberts/US]"]} uswargame -- gettysburg ;
-{ rank = same; 1954; tactics [label = "Tactics \n [Charles S. Roberts/US]"]} gettysburg -- tactics ;
-{ rank = same; 1958; tactics2 [label = "Tactics 2 \n [Charles S. Roberts/US]"]}  tactics -- tactics2 ;
-{ rank = same; 1977; squadleader [label = "Squad Leader [John Hill/US]"]}  uswargame -- squadleader ;
+{ rank = same; 1954; gettysburg [label = "Gettysburg \n [Charles S. Roberts/US]"]} uswargame -- gettysburg ; #t7
+{ rank = same; 1954; tactics [label = "Tactics \n [Charles S. Roberts/US]"]} gettysburg -- tactics ; #t6
+{ rank = same; 1958; tactics2 [label = "Tactics 2 \n [Charles S. Roberts/US]"]}  tactics -- tactics2 ; #t6 
+{ rank = same; 1977; squadleader [label = "Squad Leader [John Hill/US]"]}  uswargame -- squadleader ; 
 { rank = same; 1977; spqr [label = "SPQR [Berg & Herman/US]"]}  uswargame -- spqr ;
 
 #{ rank = same; 1967; strategyntactics [label = "Strategy & Tactics"]} #fanzine-magazine
