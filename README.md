@@ -1,5 +1,5 @@
 # TTGBG
-**Timeline Tree of Games and Board Games, celebrating more than 8000 years of game design innovations**
+**Timeline Tree of Games and Board Games, Celebrating More Than 8000 Years of Game Design Innovations**
 
 * Download the **[PDF poster](https://github.com/pmartinolli/TTGBG/blob/master/files/ttgbg.pdf)**
 
@@ -9,7 +9,7 @@
 
 This timeline is a part of the « [On the Shoulders of Cloud Giants](http://zotrpg.blogspot.com/search/label/on%20the%20shoulders%20of%20dwarves) » [(en français)](https://jdr.hypotheses.org/category/sur-epaules-geants-nuages) set of projects. See also a [Timeline Tree of Tabletop Role-Playing Games](https://github.com/pmartinolli/TTTTRPG)
 
-I would like to work on the taxonomy of relations between games. My ambition is to design a whole phylomemetic system to track the evolution of cultural ideas. 
+I would like to build a taxonomy of relations between games and design a phylomemetic system to document the evolution of cultural ideas through games.
 
 ## How to... 
 
