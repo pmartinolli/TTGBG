@@ -38,7 +38,7 @@ I would like to build a taxonomy of relations between games and design a phylome
 * Gather your friends (or your students) and decide some teamwork methods. Each of you create an account on GitHub. 
 * Deposit your files on GitHub.
 * Go!
-* Don't forget to be a gentleman/gentlelady of the open access : cite me and Todd Lehman.
+
 
 ### ... Thank me
 
