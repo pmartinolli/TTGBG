@@ -190,3 +190,4 @@ t102 https://en.wikipedia.org/wiki/Shedding-type_games
 t103 https://en.wikipedia.org/wiki/Uno_(card_game)
 s104   War Games. (1996). In The Reader's Companion to Military History. 1968 : Andrew Wilson, The bomb and the computer [aka War Gaming], 1968. weak source. (“encirclement”) wargame attrituted to sun tzu.
 t105 https://boardgamegeek.com/boardgame/13745/puluc
+s106 Branget, Benjamin, Denis Auger, et Maude St-Laurent. 2018. « 40 ans de recherche en plein air : évolution et tendance ». Loisir et Société / Society and Leisure 41 (1): 105-29. https://doi.org/10.1080/07053436.2018.1438134.
