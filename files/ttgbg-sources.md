@@ -191,3 +191,25 @@ t103 https://en.wikipedia.org/wiki/Uno_(card_game)
 s104   War Games. (1996). In The Reader's Companion to Military History. 1968 : Andrew Wilson, The bomb and the computer [aka War Gaming], 1968. weak source. (“encirclement”) wargame attrituted to sun tzu.
 t105 https://boardgamegeek.com/boardgame/13745/puluc
 s106 Branget, Benjamin, Denis Auger, et Maude St-Laurent. 2018. « 40 ans de recherche en plein air : évolution et tendance ». Loisir et Société / Society and Leisure 41 (1): 105-29. https://doi.org/10.1080/07053436.2018.1438134.
+t107 https://en.wikipedia.org/wiki/Trick-taking_game
+t108 https://en.wikipedia.org/wiki/Ruff_and_honours
+t109 https://en.wikipedia.org/wiki/Piquet
+t110 https://en.wikipedia.org/wiki/Bezique
+t111 https://en.wikipedia.org/wiki/Binokel
+t112 https://en.wikipedia.org/wiki/Tarot
+t113 https://en.wikipedia.org/wiki/Tarot 
+t114 https://en.wikipedia.org/wiki/History_of_contract_bridge
+t115 https://en.wikipedia.org/wiki/Duplicate_bridge
+s116 Bose, M. L. (1998). Social And Cultural History Of Ancient India (revised & Enlarged Edition). Concept Publishing Company. p. 179. ISBN 978-81-7022-598-0.  https://books.google.ca/books?id=t_PpdZosif4C&pg=PA179&redir_esc=y#v=onepage&q&f=false
+
+
+
+
+
+
+
+
+
+
+
+

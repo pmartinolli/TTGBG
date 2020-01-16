@@ -1,4 +1,4 @@
-##### Version 20200114b
+##### Version 20200116
 
 ###################################################################
 ###########                                              ##########
@@ -254,7 +254,7 @@ node [fontcolor=orange, color=orange];
 	{ suitedcard [label="building suit of cards"]} domino -- suitedcard;
 		{ sheddingtypecard [label="shedding-type card game"]} suitedcard -- sheddingtypecard; #t102
 	{ card [label="cards"]} suitedcard -- card;
-			{ rank = same; 1300; tricktacking [label="trick-taking cardgames"]} card -- tricktacking; #1st=karnoffel1400
+			{ rank = same; 1300; tricktacking [label="trick-taking cardgames"]} card -- tricktacking; #1st=karnoffel1400 #t107
 				{ rank = same; 1400; trumpcard [label="game of trump or ruff"]} tricktacking -- trumpcard;   #1st=ruffnhonours1500
 				{ multitrick [label="multi-trick"]} tricktacking -- multitrick;
 				{ pointtrick [label="point-trick"]} tricktacking -- pointtrick;
@@ -337,8 +337,8 @@ node [fontcolor=red3, color=red3];
 				{ hexboard [label="hex mapped board"]} gridmap -- hexboard; 
 
 { mobilepiece [label="mobile piece"]} tabletopgame -- mobilepiece;
-	{ onepieceoneindividual [label="1 piece = 1 individual"]} mobilepiece -- onepieceoneindividual;
-		{ onepieceonegroup [label="1 piece = 1 group of soldiers"]} onepieceoneindividual -- onepieceonegroup -- miniaturewargaming;
+	{ pawn [label="pawn\n(1 piece=1 indiv.)"]} mobilepiece -- pawn;
+		{ onepieceonegroup [label="1 piece = 1 group of soldiers"]} pawn -- onepieceonegroup -- miniaturewargaming;
 	{ flippedpiece [label="flipped piece"]} mobilepiece -- flippedpice;  #reversi
 
 
@@ -371,7 +371,7 @@ node [fontcolor=red3, color=red3];
 			{ rollnkeep [label="roll n keep"]} dice -- rollnkeep;
 
 { lottery [label="lottery"]} gambling -- lottery;
-	{ gambling [label="gambling"]}  {randomness;imperfectinformation} -- gambling;
+	{ rank = same; "-4000"; gambling [label="gambling"]}  {randomness;imperfectinformation} -- gambling; #s116
 		{ bidding [label="bidding"]} gambling -- bidding;
 			{ stockexchange [label="stock exchange simulation"]} bidding -- stockexchange;
 
@@ -663,7 +663,7 @@ gewu -- xiangqi [style=dotted, label="?"];
 { rank = same; 600; chaturanga [label="Chaturanga\n[India,c.600]"]}  nayadyutair -- chaturanga; #aka:चतुरङ्ग 
 chess -- chaturanga;
 twocoloredboard -- chaturanga;
-onepieceoneindividual -- chaturanga;
+pawn -- chaturanga;
 dice -- chaturanga;
 { rank = same; 600; chatrang [label="Chatrang\n[Persia,c.600]"]} chaturanga -- chatrang; #t13 #aka:شَطْرَنْج 
 { rank = same; 700; sittuyin [label="Sittuyin\n[Burma,c.700]"]} chaturanga -- sittuyin;  #t12
@@ -776,7 +776,7 @@ gambling -- dominoes;
 { rank = same; 1600; asnas [label="As-Nas [Persia,c.1600]"]} ganjifa -- asnas; #t27
 
 { rank = same; 1300; kanjifah [label="Kanjifah Mamluk cards [Egypt,c.1300]"]} moneysuitedcards -- kanjifah; #t28
-{ rank = same; 1400; tarot [label="Tarot [Italy-Spain,c.1370"]}  kanjifah -- tarot;  #t41
+{ rank = same; 1400; tarot [label="Tarot [Italy-Spain,c.1370"]}  kanjifah -- tarot;  #s41 #t113 
 
 { rank = same; 1600; madiao [label=" Madiao [China,c.1600]"]} moneysuitedcards -- madiao; #t29  #aka : Paper Tiger 马吊
 madiao -- tricktackinggames;
@@ -788,7 +788,7 @@ madiao -- tricktackinggames;
 
 ###### card games : games of trump & trick-tacking
 
-{ rank = same; 1500; ruffnhonours [label="Ruff & Honours [c.1500]"]} trumpcard -- ruffnhonours;
+{ rank = same; 1500; ruffnhonours [label="Ruff & Honours [c.1500]"]} trumpcard -- ruffnhonours; #t108
 
 { rank = same; 1400; karnoffel [label="Karnöffel [1462, DE]"]} tricktacking -- karnoffel; #t86
 { rank = same; 1700; whist [label="Whist [1728, UK]"]} tricktacking -- whist; #t87
@@ -798,10 +798,10 @@ ruffnhonours -- whist;
 { rank = same; 1400; trionfi [label="Trionfi [1440, IT]"]} pointtrick -- trionfi; 
 trionfi -- tarot;
 
-{ rank = same; 1500; piquet [label="Piquet [1535, FR]"]} trickndraw -- piquet;
-{ rank = same; 1600; bezique [label="Bezique [1600s, ES]"]} piquet -- bezique;
-{ rank = same; 1800; binokel [label="Binokel [1884, DE]"]} bezique -- binokel;
-{ rank = same; 1900; pinochle [label="Pinochle [1900, US]"]} binokel -- pinochle;
+{ rank = same; 1500; piquet [label="Piquet [1535, FR]"]} trickndraw -- piquet; #t109
+{ rank = same; 1600; bezique [label="Bezique [1600s, ES]"]} piquet -- bezique; #110
+{ rank = same; 1800; binokel [label="Binokel [1884, DE]"]} bezique -- binokel; #t111 
+{ rank = same; 1900; pinochle [label="Pinochle [1900, US]"]} binokel -- pinochle; 
 
 { rank = same; 1600; reversin [label="Reversin [1601, FR]"]} trickavoidance -- reversin;
 { rank = same; 1700; polignac [label="Polignac [1700s, FR]"]} reversin -- polignac;
@@ -811,8 +811,8 @@ trionfi -- tarot;
 
 { rank = same; 1800; biritch [label="Biritch or Russian Whist [1886,UK]"]} whist -- biritch;
 { rank = same; 1900; auctionbridge [label="Auction bridge [1904, UK]"]} biritch -- auctionbridge;
-{ rank = same; 1920; contractbridge [label="Contract bridge [1920s]"]} auctionbridge -- contractbridge;
-{ rank = same; 1940; duplicatebridge [label="Duplicate bridge [1940s]"]} contractbridge -- duplicatebridge;
+{ rank = same; 1920; contractbridge [label="Contract bridge [1920s]"]} auctionbridge -- contractbridge; #t114
+{ rank = same; 1940; duplicatebridge [label="Duplicate bridge [1940s]"]} contractbridge -- duplicatebridge; #t115 
 duplicatewhist -- duplicatebridge;
 
 
