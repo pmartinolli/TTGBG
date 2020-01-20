@@ -103,7 +103,7 @@ s17  http://www.gamecabinet.com/history/Senet.html  http://piccionep.people.cofc
 s18  The oldest known backgammon, dice and caraway seeds. "Iran's Burnt City Throws up World’s Oldest Backgammon." Persian Journal. December 4, 2004. Retrieved on August 5, 2006. 	
 t19  https://en.wikipedia.org/wiki/Tabula_(game)
 t20  https://en.wikipedia.org/wiki/Gyan_chauper
-s21  http://bgsj.ludus-opuscula.org/PDF_Files/BGS4-complete.pdf  running-fight board game (combine the method of race games and the goal of elimination-based games)  This category of board games is an important one: it offers a transition between the more regular race games and the war games
+s21  Board Games Studies, Vol. 4. 2001 http://bgsj.ludus-opuscula.org/PDF_Files/BGS4-complete.pdf  "running-fight board game (combine the method of race games and the goal of elimination-based games)  This category of board games is an important one: it offers a transition between the more regular race games and the war games"
 t22  https://en.wikipedia.org/wiki/T%C3%A2b
 t23  https://en.wikipedia.org/wiki/S%C3%A1hkku
 t24  https://en.m.wikipedia.org/wiki/Chinese_dominoes
@@ -188,7 +188,7 @@ s100 Board Games in 100 Moves by Ian Livingstone, James Wallis
 t101 https://en.wikipedia.org/wiki/Rithmomachy
 t102 https://en.wikipedia.org/wiki/Shedding-type_games
 t103 https://en.wikipedia.org/wiki/Uno_(card_game)
-s104   War Games. (1996). In The Reader's Companion to Military History. 1968 : Andrew Wilson, The bomb and the computer [aka War Gaming], 1968. weak source. (“encirclement”) wargame attrituted to sun tzu.
+s104 https://www.reddit.com/r/baduk/comments/anci36/does_anyone_know_about_the_game_wei_hai/ War Games. (1996). In The Reader's Companion to Military History. 1968 : Andrew Wilson, The bomb and the computer [aka War Gaming], 1968. weak source. (“encirclement”) wargame attrituted to sun tzu.
 t105 https://boardgamegeek.com/boardgame/13745/puluc
 s106 Branget, Benjamin, Denis Auger, et Maude St-Laurent. 2018. « 40 ans de recherche en plein air : évolution et tendance ». Loisir et Société / Society and Leisure 41 (1): 105-29. https://doi.org/10.1080/07053436.2018.1438134.
 t107 https://en.wikipedia.org/wiki/Trick-taking_game
@@ -201,7 +201,11 @@ t113 https://en.wikipedia.org/wiki/Tarot
 t114 https://en.wikipedia.org/wiki/History_of_contract_bridge
 t115 https://en.wikipedia.org/wiki/Duplicate_bridge
 s116 Bose, M. L. (1998). Social And Cultural History Of Ancient India (revised & Enlarged Edition). Concept Publishing Company. p. 179. ISBN 978-81-7022-598-0.  https://books.google.ca/books?id=t_PpdZosif4C&pg=PA179&redir_esc=y#v=onepage&q&f=false
-
+t117 https://en.wikipedia.org/wiki/Xiangqi#History "earliest description of the game's rules appears in the story "Cén Shùn" (岑順) in the collection Xuanguai lu (玄怪錄), by Niu Sengru, 779-847."
+t118 https://en.wikipedia.org/wiki/Chinese_playing_cards
+t119 https://boardgamegeek.com/boardgame/4505/tarot  
+s120 "The unique features of poker have to do with the betting, and do not appear in any known older game" Reuven and Gabrielle Brenner, and Aaron Brown, A World of Chance: Betting on Religion, Games, Wall Street, Cambridge University Press (2008), ISBN 978-0-521-88466-2
+t121 https://en.wikipedia.org/wiki/History_of_Wargaming_Project 
 
 
 
