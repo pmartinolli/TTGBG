@@ -1,4 +1,4 @@
-##### Version 20200120
+##### Version 20200123
 
 ###################################################################
 ###########                                              ##########
@@ -282,9 +282,11 @@ node [fontcolor=orange, color=orange];
 		{ tileplacement [label="tile placement"]} building -- tileplacement;
 			{ tileworkerplacement [label="tile & worker placement"]} tileplacement -- tileworkerplacement;
 		{ tableaubuilding [label="tableau building"]}  building -- tableaubuilding;
-		{ collectiblecard [label="collectible card"]} cardgame -- collectiblecard;
-			{ collectibledeckbuilding [label="deck building\nw/collectible card"]} {collectiblecard;building} -- collectibledeckbuilding;
-			{ completedeckbuilding [label="deck building\nw/complete card set"]} collectibledeckbuilding -- completedeckbuilding;
+			{ collectiblecommondeckcard [label="collectible common-deck card"]} tableaubuilding -- collectiblecommondeckcard;
+				{ collectiblecard [label="collectible card game\n(CCG)"]} collectiblecommondeckcard -- collectiblecard;					
+					{ 	collectibledeckbuilding [label="deck building\nw/collectible card"]} collectiblecard -- collectibledeckbuilding;
+						{ completedeckbuilding [label="deck building\nw/complete card set"]} collectibledeckbuilding -- completedeckbuilding;	
+					{ noncollectiblecustomizablecard[label="non-collectible customizable card game\nliving card game (LCG)"]} collectiblecard -- noncollectiblecustomizablecard;																						   
 
 
 { pretendplay [label="pretend play"]} play -- pretendplay;
@@ -634,6 +636,7 @@ racing -- chupu;
 { rank = same; 900; jaingyanchauper [label="Gyan chauper\n[India,c.900]"]} chaupar -- jaingyanchauper; # aka: jain gyan chaupar, gyan chauper  #t20
 { rank = same; 1890; snakesnladders [label="Snakes & Ladders\n[UK,1892]"]}  jaingyanchauper -- snakesnladders; 
 { rank = same; 1940; chutesnladders [label="Chutes & Ladders\n[US,1943]"]} snakesnladders -- chutesnladders;
+{ rank = same; 1950; candyland [label="Candy Land\n[US,1949]"]}  chutesnladders -- candyland;																									  
 
 { rank = same; 1400; royalgamegoose [label="Royal Game of the Goose\n[1480]"]} racing -- royalgamegoose; #t91
 { rank = same; 1500; gamegoose [label="Game of the Goose\n[1570s]"]} royalgamegoose -- gamegoose; #t91
@@ -647,7 +650,6 @@ racing -- chupu;
 { rank = same; 1860; chgameoflife [label="The Checkered Game of Life\n[US,1860]\nSecular values rewarded (education, marriage, money)"]}   tmoh -- chgameoflife;  
 { rank = same; 1880; tgotdmb [label="The Game of the District Messenger Boy\n[US,1886]\nAccumulation of Wealth lead to higher social status"]}  chgameoflife -- tgotdmb;
 { rank = same; 1880; tgottb [label="Game of the Telegraph Boy, or Merit Rewarded\n[US,1888]"]}  tgotdmb -- tgottb;
-{ rank = same; 1940; candyland [label="Candy Land\n[US,1949]"]}  tgottb -- candyland;
 { rank = same; 1960; gameoflife [label="The Game of Life\n[US,1960]"]}  chgameoflife -- gameoflife; 
 
 
@@ -673,12 +675,6 @@ chasingevading -- rgur; #1st
 { rank = same; 1800; daldos [label="Daldøs\n[Danemark,c.1800]"]} kioz -- daldos [style=dotted]; # aka: Jæren, Daldosa
 { rank = same; 1800; sahkku [label="Sahkku\n[Norway-Russia,c.1800]"]} daldos -- sahkku;  # aka: Bircu, Percc', The Devil's Game  #t23
 
-
-{ rank = same; 1983; talisman [label="Talisman [UK,Robert Harris,1983]"] } 
-runningfighting -- talisman;
-
-{ rank = same; 1930; buccaneer [label="Buccaneer\n[Bull,1938]"]} 
-runningfighting -- buccaneer;
 
 
 
@@ -796,6 +792,12 @@ sowing -- agmancala;
 
 { rank = same; 1979; qqarpentsdepieges [label="Quelques arpents de pieges\n[Haney & Abbott,CA]"]} racingcollecting -- qqarpentsdepieges;
 { rank = same; 1982; trivialpursuit [label="Trivial Pursuit\n[Haney & Abbott]"]}  qqarpentsdepieges -- trivialpursuit;
+
+{ rank = same; 1983; talisman [label="Talisman [UK,Robert Harris,1983]"] } 
+racingcollecting -- talisman;
+
+{ rank = same; 1930; buccaneer [label="Buccaneer\n[Bull,1938]"]} 
+racingcollecting -- buccaneer;
 
 
 
@@ -1017,6 +1019,13 @@ completedeckbuilding -- dominion;
 tableaubuilding -- sevenwonders;
 drafting -- sevenwonders;
 
+######### Collectible common-deck card games #https://en.wikipedia.org/wiki/List_of_collectible_card_games#Collectible_common-deck_card_games
+
+{ rank = same; 1965; nuclearwar [label="Nuclear War\n[1965]"]}
+collectiblecommondeckcard -- nuclearwar;
+
+{ rank = same; 2008; callofcthulhucardgame [label="Call of Cthulhu: The Card Game\n[2008]"]}
+noncollectiblecustomizablecard -- callofcthulhucardgame;
 
 
 
@@ -1159,8 +1168,8 @@ freekriegsspielvt -- americankrieg [style=dotted];
 { rank = same; 1880; strategos [label = "Strategos: A Series of American Games of War Based upon Military Principles\n[Charles A.L. Totten,US,1880]"]}  #s8 
 americankrieg -- strategos [style=dotted]; 
 umpire -- strategos;
-{ rank = same; 1958; news [label = "Navy Electronic Warfare Simulator [US,1958]"]}  usnavalcollege -- news; #p55
-{ rank = same; 1955; randcwg [label ="RAND Cold War Game [1955-1956]"]} 
+#{ rank = same; 1958; news [label = "Navy Electronic Warfare Simulator [US,1958]"]}  usnavalcollege -- news; #p55
+#{ rank = same; 1955; randcwg [label ="RAND Cold War Game [1955-1956]"]} 
 
 { rank = same; 1950; uswargame [label = "US wargaming hobby movement for middle class"]}  strategos -- uswargame;
 { rank = same; 1954; gettysburg [label = "Gettysburg\n[Charles S. Roberts,US]"]} uswargame -- gettysburg; #t7
