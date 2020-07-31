@@ -1,4 +1,4 @@
-# TTGBG
+# TTGBG (v0.4)
 **Timeline Tree of Games and Board Games, Celebrating More Than 8000 Years of Game Design Innovations**
 
 * Download the **[PDF poster](https://github.com/pmartinolli/TTGBG/blob/master/files/ttgbg.pdf)**
@@ -7,9 +7,9 @@
 
 ## Long term goal
 
-This timeline is a part of the « [On the Shoulders of Cloud Giants](http://zotrpg.blogspot.com/search/label/on%20the%20shoulders%20of%20dwarves) » [(en français)](https://jdr.hypotheses.org/category/sur-epaules-geants-nuages) set of projects. See also a [Timeline Tree of Tabletop Role-Playing Games](https://github.com/pmartinolli/TTTTRPG)
+This timeline is a part of the « [On the Shoulders of Cloud Giants](http://zotrpg.blogspot.com/search/label/on%20the%20shoulders%20of%20dwarves) » [(en français)](https://jdr.hypotheses.org/category/sur-epaules-geants-nuages) set of projects. See also a [Timeline Tree of Tabletop Role-Playing Games](https://github.com/pmartinolli/TTTTRPG).
 
-I would like to build a taxonomy of relations between games and design a phylomemetic system to document the evolution of cultural ideas through games.
+I would like to build a taxonomy of relations between games and I would like to design a phylomemetic system to document the evolution of cultural ideas through games. In this graph, the ludemes (ie. small units of game mechanics or goals) are driving the evolution of the branches of the tree and the actual games are outputs (or « fruits ») on these branches.
 
 ## How to... 
 
@@ -51,7 +51,7 @@ I would like to build a taxonomy of relations between games and design a phylome
 
 ## Short term improvements
 
-- Building a better taxonomy/hierarchy of game designs
+- Building a better taxonomy/hierarchy of ludemes.
 - Producing a more dense graph.
 - Inserting a key legend to explicit the colors and links displayed.
 
